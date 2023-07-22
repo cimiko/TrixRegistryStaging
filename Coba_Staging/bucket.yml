@@ -1,6 +1,4 @@
 flows:
-  707f1e64-4bbf-4ab2-aaf5-22f83a3fe52d: {ver: 1, file: ini_test.snapshot, comments: test
-      aja sih, author: anonymous, created: 1689676160778, flowName: ini test, flowDesc: ''}
   22497d78-29fe-49ec-b9d8-b13b7f6d9e82: {ver: 1, file: test.snapshot, comments: ini
       test, author: anonymous, created: 1689677010278, flowName: test, flowDesc: ''}
 layoutVer: 1
