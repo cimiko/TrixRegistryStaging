@@ -1,6 +1,6 @@
 flows:
-  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 1, file: Create_Bucket.snapshot, comments: Create
-      Proses Group Trix Staging, author: anonymous, created: 1690005664756, flowName: Create
+  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 2, file: Create_Bucket.snapshot, comments: menambahkan
+      get daily statement pool, author: anonymous, created: 1690015341097, flowName: Create
       Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 1, file: Get_Daily_Statement_Pool.snapshot,
     comments: Membuat pipeline get daily statement pool dari service pool, author: anonymous,
