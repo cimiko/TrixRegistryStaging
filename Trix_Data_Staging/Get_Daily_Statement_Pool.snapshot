@@ -125,6 +125,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "38e1c007-9aa3-3a68-a120-45c83a9236fa",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+            "name" : "Set Filename",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
             "name" : "ConvertJsonToCsv",
             "type" : "PROCESSOR"
@@ -151,11 +181,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : -8.0,
-            "y" : 296.0
+            "x" : -4.8447265625,
+            "y" : 491.62811279296875
           }, {
-            "x" : -96.0,
-            "y" : 328.0
+            "x" : -92.8447265625,
+            "y" : 523.6281127929688
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -251,36 +281,6 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "5818ab29-1964-3145-9d96-f6733ec2857f",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
-            "name" : "ConvertJsonToCsv",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
@@ -312,12 +312,42 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+            "name" : "Set Filename",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "c2b2e4c3-e370-3484-a189-80579f545d20",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ {
             "x" : 517.0,
-            "y" : 79.0
+            "y" : 77.42235565185547
           }, {
             "x" : 517.0,
-            "y" : 129.0
+            "y" : 127.42235565185547
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -899,11 +929,11 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 48.0,
-            "y" : 256.0
+            "y" : 448.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
-            "Directory" : "/home/hartono/docker/PoolSummary",
+            "Directory" : "/home",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -1082,6 +1112,70 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ConvertJSONToSQL",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+          "name" : "Set Filename",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 48.0,
+            "y" : 256.0
+          },
+          "properties" : {
+            "filename" : "PoolStatement${now():toNumber():minus(86400000):format('yyyy-MM-dd')}",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 sec"
         } ],
         "remoteProcessGroups" : [ ],
