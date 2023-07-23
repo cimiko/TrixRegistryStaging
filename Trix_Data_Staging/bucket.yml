@@ -3,12 +3,12 @@ flows:
       prosesor untuk set filename di flow get daily statement pool, author: anonymous,
     created: 1690114999179, flowName: Create Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5:
-    ver: 3
+    ver: 4
     file: Get_Daily_Statement_Pool.snapshot
     comments: |
-      Set Filename report statement pool
+      menambahkan penamaan file daily statement pool dengan ext .csv
     author: anonymous
-    created: 1690114959094
+    created: 1690143998814
     flowName: Get Daily Statement Pool
     flowDesc: ''
 layoutVer: 1
