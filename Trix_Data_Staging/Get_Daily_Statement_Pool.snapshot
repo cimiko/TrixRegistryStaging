@@ -5,9 +5,17 @@
   "content" : {
     "flowSnapshot" : {
       "externalControllerServices" : {
+        "8d367318-db94-3313-ad19-aa7ab865fb1a" : {
+          "identifier" : "8d367318-db94-3313-ad19-aa7ab865fb1a",
+          "name" : "CSVRecordSetWriter"
+        },
         "c93b229e-20bd-385c-ad92-148be1d4bc08" : {
           "identifier" : "c93b229e-20bd-385c-ad92-148be1d4bc08",
           "name" : "DB Summary Report Staging"
+        },
+        "d3c36689-9d61-35e1-a86c-297f4de48c82" : {
+          "identifier" : "d3c36689-9d61-35e1-a86c-297f4de48c82",
+          "name" : "JsonTreeReader"
         }
       },
       "flowContents" : {
@@ -45,7 +53,7 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 1000000,
           "bends" : [ {
             "x" : 1061.0,
             "y" : 481.3431396484375
@@ -117,8 +125,8 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -177,7 +185,7 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -207,7 +215,7 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 1000000,
           "bends" : [ {
             "x" : 1061.0,
             "y" : 297.3431396484375
@@ -232,7 +240,7 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "original", "failure", "sql" ],
+          "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
@@ -244,6 +252,36 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "5818ab29-1964-3145-9d96-f6733ec2857f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -268,6 +306,42 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
             "name" : "ExecuteSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 517.0,
+            "y" : 79.0
+          }, {
+            "x" : 517.0,
+            "y" : 129.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "161b883b-100d-332c-84d1-2d55e8194cbe",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -300,7 +374,7 @@
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
+          "executionNode" : "PRIMARY",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "ca153205-5378-3e62-9d9f-ced8917d905c",
           "name" : "InvokeHTTP",
@@ -312,7 +386,7 @@
           "properties" : {
             "use-etag" : "false",
             "Proxy Type" : "http",
-            "Connection Timeout" : "5 secs",
+            "Connection Timeout" : "30 secs",
             "send-message-body" : "true",
             "Authorization" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
             "set-form-filename" : "true",
@@ -325,13 +399,12 @@
             "Remote URL" : "https://api.infini4d.com/statement/getDailyStatement",
             "Content-Type" : "${mime.type}",
             "max-idle-connections" : "5",
-            "Read Timeout" : "15 secs",
+            "Read Timeout" : "30 secs",
             "Max Length To Put In Attribute" : "256",
             "ignore-response-content" : "false",
             "Digest Authentication" : "false",
             "HTTP Method" : "GET",
             "Add Response Headers to Request" : "true",
-            "header" : "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
             "Include Date Header" : "True",
             "Penalize on \"No Retry\"" : "false"
           },
@@ -526,12 +599,6 @@
               "displayName" : "Basic Authentication Username",
               "identifiesControllerService" : false,
               "name" : "Basic Authentication Username",
-              "sensitive" : false
-            },
-            "header" : {
-              "displayName" : "header",
-              "identifiesControllerService" : false,
-              "name" : "header",
               "sensitive" : false
             },
             "Include Date Header" : {
@@ -761,6 +828,58 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.LogAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+          "name" : "ConvertJsonToCsv",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 48.0,
+            "y" : 40.0
+          },
+          "properties" : {
+            "record-writer" : "8d367318-db94-3313-ad19-aa7ab865fb1a",
+            "record-reader" : "d3c36689-9d61-35e1-a86c-297f4de48c82",
+            "include-zero-record-flowfiles" : "true"
+          },
+          "propertyDescriptors" : {
+            "record-writer" : {
+              "displayName" : "Record Writer",
+              "identifiesControllerService" : true,
+              "name" : "record-writer",
+              "sensitive" : false
+            },
+            "record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "record-reader",
+              "sensitive" : false
+            },
+            "include-zero-record-flowfiles" : {
+              "displayName" : "Include Zero Record FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "include-zero-record-flowfiles",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ConvertRecord",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
