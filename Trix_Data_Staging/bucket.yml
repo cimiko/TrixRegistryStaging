@@ -1,7 +1,7 @@
 flows:
-  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 3, file: Create_Bucket.snapshot, comments: menambahkan
-      prosesor untuk set filename di flow get daily statement pool, author: anonymous,
-    created: 1690114999179, flowName: Create Bucket, flowDesc: ''}
+  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 4, file: Create_Bucket.snapshot, comments: menambahkan
+      penamaan file daily statement pool, author: anonymous, created: 1690144031888,
+    flowName: Create Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5:
     ver: 4
     file: Get_Daily_Statement_Pool.snapshot
