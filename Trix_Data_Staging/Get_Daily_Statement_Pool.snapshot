@@ -42,12 +42,12 @@
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure", "success" ],
+          "selectedRelationships" : [ "success", "failure" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
+            "name" : "MenyimpanFile",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -96,7 +96,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
+            "name" : "MenyimpanFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -113,7 +113,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
+            "name" : "MenyimpanFile",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -126,7 +126,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "ExecuteSQL",
+            "name" : "InsertDataToStaging",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -209,7 +209,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "ExecuteSQL",
+            "name" : "InsertDataToStaging",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -239,7 +239,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-            "name" : "InvokeHTTP",
+            "name" : "GetDataDailyStatementPool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -252,7 +252,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "PutFile",
+            "name" : "MenyimpanFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -288,12 +288,12 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-            "name" : "InvokeHTTP",
+            "name" : "GetDataDailyStatementPool",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "bc7634fc-0f07-3a14-b67f-dc2def610fac",
+          "identifier" : "1cdaf636-7dec-3370-a3c5-8457ac955492",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -305,7 +305,7 @@
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-            "name" : "InvokeHTTP",
+            "name" : "GetDataDailyStatementPool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -347,36 +347,6 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
-            "name" : "LogAttribute",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "bec92db8-7c34-3f42-b34f-d319b58707ce",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "ExecuteSQL",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
             "x" : 517.0,
@@ -408,6 +378,36 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
             "name" : "ConvertJsonToCsv",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
+            "name" : "LogAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "8484bd9b-b60d-3dc3-8a98-762ff5ed5893",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
+            "name" : "InsertDataToStaging",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -443,7 +443,7 @@
           "executionNode" : "PRIMARY",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-          "name" : "InvokeHTTP",
+          "name" : "GetDataDailyStatementPool",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 592.0,
@@ -707,7 +707,7 @@
           "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-          "name" : "ExecuteSQL",
+          "name" : "InsertDataToStaging",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 592.0,
@@ -961,7 +961,7 @@
           "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-          "name" : "PutFile",
+          "name" : "MenyimpanFile",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 48.0,
@@ -1170,7 +1170,7 @@
             "y" : 256.0
           },
           "properties" : {
-            "filename" : "PoolStatement${now():toNumber():minus(86400000):format('yyyy-MM-dd')}.csv",
+            "filename" : "PoolStatement${now():toNumber():format('yyyy-MM-dd')}.csv",
             "Store State" : "Do not store state",
             "canonical-value-lookup-cache-size" : "100"
           },
