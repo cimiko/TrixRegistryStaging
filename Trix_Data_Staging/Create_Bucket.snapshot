@@ -54,7 +54,7 @@
             "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
             "flowId" : "60c9347c-44d3-4d76-b482-6956d02bbeb5",
             "registryUrl" : "http://10.25.147.34:82",
-            "version" : 4
+            "version" : 5
           }
         } ],
         "processors" : [ ],
