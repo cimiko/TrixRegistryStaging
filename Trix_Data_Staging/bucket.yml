@@ -1,6 +1,6 @@
 flows:
-  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 5, file: Create_Bucket.snapshot, comments: Mengubah
-      penamaan di filename get daily statement pool, author: anonymous, created: 1690228328718,
+  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 6, file: Create_Bucket.snapshot, comments: Menambahkan
+      dan merapihkan prosessor group untuk pools, author: anonymous, created: 1690285544932,
     flowName: Create Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 6, file: Get_Daily_Statement_Pool.snapshot,
     comments: Mengatur ulang connection pool karena menambahkan driver aws redshift,

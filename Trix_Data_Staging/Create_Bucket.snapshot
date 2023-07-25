@@ -16,14 +16,14 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "3be7a254-d078-35c0-8f5d-51fd024d10b1",
+        "identifier" : "9768011f-0d33-308e-8498-310ffe41ba87",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Trix Staging",
         "outputPorts" : [ ],
         "position" : {
-          "x" : -200.0,
-          "y" : -208.0
+          "x" : 352.0,
+          "y" : 72.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -36,26 +36,51 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "3be7a254-d078-35c0-8f5d-51fd024d10b1",
-          "identifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "groupIdentifier" : "9768011f-0d33-308e-8498-310ffe41ba87",
+          "identifier" : "720df9d1-9a2d-3bda-b9c7-84ff033ae599",
           "inputPorts" : [ ],
           "labels" : [ ],
-          "name" : "Get Daily Statement Pool",
+          "name" : "Pools",
           "outputPorts" : [ ],
           "position" : {
-            "x" : -390.58575439453125,
-            "y" : 7.029449462890625
+            "x" : -376.0,
+            "y" : -8.0
           },
-          "processGroups" : [ ],
+          "processGroups" : [ {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ ],
+            "controllerServices" : [ ],
+            "defaultBackPressureDataSizeThreshold" : "1 GB",
+            "defaultBackPressureObjectThreshold" : 10000,
+            "defaultFlowFileExpiration" : "0 sec",
+            "flowFileConcurrency" : "UNBOUNDED",
+            "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+            "funnels" : [ ],
+            "groupIdentifier" : "720df9d1-9a2d-3bda-b9c7-84ff033ae599",
+            "identifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "inputPorts" : [ ],
+            "labels" : [ ],
+            "name" : "Get Daily Statement Pool",
+            "outputPorts" : [ ],
+            "position" : {
+              "x" : -390.58575439453125,
+              "y" : 7.029449462890625
+            },
+            "processGroups" : [ ],
+            "processors" : [ ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { },
+            "versionedFlowCoordinates" : {
+              "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
+              "flowId" : "60c9347c-44d3-4d76-b482-6956d02bbeb5",
+              "registryUrl" : "http://10.25.147.34:82",
+              "version" : 6
+            }
+          } ],
           "processors" : [ ],
           "remoteProcessGroups" : [ ],
-          "variables" : { },
-          "versionedFlowCoordinates" : {
-            "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
-            "flowId" : "60c9347c-44d3-4d76-b482-6956d02bbeb5",
-            "registryUrl" : "http://10.25.147.34:82",
-            "version" : 5
-          }
+          "variables" : { }
         } ],
         "processors" : [ ],
         "remoteProcessGroups" : [ ],
