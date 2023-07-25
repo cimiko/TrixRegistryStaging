@@ -5,17 +5,17 @@
   "content" : {
     "flowSnapshot" : {
       "externalControllerServices" : {
-        "8d367318-db94-3313-ad19-aa7ab865fb1a" : {
-          "identifier" : "8d367318-db94-3313-ad19-aa7ab865fb1a",
-          "name" : "CSVRecordSetWriter"
+        "852eb193-c797-326f-8664-ed67523f3860" : {
+          "identifier" : "852eb193-c797-326f-8664-ed67523f3860",
+          "name" : "JsonRecordSetWriter"
         },
-        "c93b229e-20bd-385c-ad92-148be1d4bc08" : {
-          "identifier" : "c93b229e-20bd-385c-ad92-148be1d4bc08",
-          "name" : "DB Summary Report Staging"
-        },
-        "d3c36689-9d61-35e1-a86c-297f4de48c82" : {
-          "identifier" : "d3c36689-9d61-35e1-a86c-297f4de48c82",
+        "f13b5363-ce99-3ad5-9844-a54c245e972d" : {
+          "identifier" : "f13b5363-ce99-3ad5-9844-a54c245e972d",
           "name" : "JsonTreeReader"
+        },
+        "9efea989-0a6c-32c6-99f9-f11c6096ca0e" : {
+          "identifier" : "9efea989-0a6c-32c6-99f9-f11c6096ca0e",
+          "name" : "DB Summary Report Staging"
         }
       },
       "flowContents" : {
@@ -216,6 +216,42 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 1061.0,
+            "y" : 87.0
+          }, {
+            "x" : 1061.0,
+            "y" : 137.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
+            "name" : "GetDataDailyStatementPool",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "ae36c8b2-904d-39ff-9388-67b4ae949b3c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Retry", "Failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
+            "name" : "GetDataDailyStatementPool",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -270,42 +306,6 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
             "name" : "Set Filename",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 1061.0,
-            "y" : 87.0
-          }, {
-            "x" : 1061.0,
-            "y" : 137.0
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-            "name" : "GetDataDailyStatementPool",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "1cdaf636-7dec-3370-a3c5-8457ac955492",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "Retry", "Failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
-            "name" : "GetDataDailyStatementPool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -717,7 +717,7 @@
             "esql-max-rows" : "0",
             "dbf-default-precision" : "10",
             "Max Wait Time" : "0 seconds",
-            "Database Connection Pooling Service" : "c93b229e-20bd-385c-ad92-148be1d4bc08",
+            "Database Connection Pooling Service" : "9efea989-0a6c-32c6-99f9-f11c6096ca0e",
             "dbf-user-logical-types" : "true",
             "dbf-default-scale" : "0",
             "compression-format" : "NONE",
@@ -916,8 +916,8 @@
             "y" : 40.0
           },
           "properties" : {
-            "record-writer" : "8d367318-db94-3313-ad19-aa7ab865fb1a",
-            "record-reader" : "d3c36689-9d61-35e1-a86c-297f4de48c82",
+            "record-writer" : "852eb193-c797-326f-8664-ed67523f3860",
+            "record-reader" : "f13b5363-ce99-3ad5-9844-a54c245e972d",
             "include-zero-record-flowfiles" : "true"
           },
           "propertyDescriptors" : {
@@ -1058,7 +1058,7 @@
             "Unmatched Column Behavior" : "Fail on Unmatched Columns",
             "jts-quoted-identifiers" : "false",
             "jts-quoted-table-identifiers" : "false",
-            "JDBC Connection Pool" : "c93b229e-20bd-385c-ad92-148be1d4bc08",
+            "JDBC Connection Pool" : "9efea989-0a6c-32c6-99f9-f11c6096ca0e",
             "Translate Field Names" : "true",
             "Statement Type" : "INSERT"
           },
