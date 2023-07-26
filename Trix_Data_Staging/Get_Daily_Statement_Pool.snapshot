@@ -5,9 +5,9 @@
   "content" : {
     "flowSnapshot" : {
       "externalControllerServices" : {
-        "852eb193-c797-326f-8664-ed67523f3860" : {
-          "identifier" : "852eb193-c797-326f-8664-ed67523f3860",
-          "name" : "JsonRecordSetWriter"
+        "4f468a36-b398-3c58-8a9b-62b52ec4612b" : {
+          "identifier" : "4f468a36-b398-3c58-8a9b-62b52ec4612b",
+          "name" : "CSVRecordSetWriter"
         },
         "f13b5363-ce99-3ad5-9844-a54c245e972d" : {
           "identifier" : "f13b5363-ce99-3ad5-9844-a54c245e972d",
@@ -22,6 +22,36 @@
         "comments" : "",
         "componentType" : "PROCESS_GROUP",
         "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+            "name" : "Set Filename",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "ef4f22fa-3579-354d-b6f8-95d4d96df983",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToCsv",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
@@ -155,13 +185,13 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
-            "name" : "Set Filename",
+            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
+            "name" : "MenyimpanFile",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "c2b2e4c3-e370-3484-a189-80579f545d20",
+          "identifier" : "d1e316f3-7019-3a2d-ad13-a85748a837a8",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -172,8 +202,8 @@
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
-            "name" : "ConvertJsonToCsv",
+            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+            "name" : "Set Filename",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -281,36 +311,6 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "MenyimpanFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "38e1c007-9aa3-3a68-a120-45c83a9236fa",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
-            "name" : "Set Filename",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 1000000,
           "bends" : [ {
             "x" : 1061.0,
@@ -383,7 +383,7 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
+          "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -916,7 +916,7 @@
             "y" : 40.0
           },
           "properties" : {
-            "record-writer" : "852eb193-c797-326f-8664-ed67523f3860",
+            "record-writer" : "4f468a36-b398-3c58-8a9b-62b52ec4612b",
             "record-reader" : "f13b5363-ce99-3ad5-9844-a54c245e972d",
             "include-zero-record-flowfiles" : "true"
           },
