@@ -149,36 +149,6 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
-            "name" : "MenyimpanFile",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "d1e316f3-7019-3a2d-ad13-a85748a837a8",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
-            "name" : "Set Filename",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
@@ -204,6 +174,36 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
             "name" : "ConvertJSONToSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d8d48553-cb4e-322c-b2f4-f5bdd8974408",
+            "name" : "MenyimpanFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "d1e316f3-7019-3a2d-ad13-a85748a837a8",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
+            "name" : "Set Filename",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -293,7 +293,7 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "6f9fe1b1-c123-3dd2-ab2e-d256d4c4b104",
+          "identifier" : "c63e438f-eee7-368e-bf9d-d08597e11269",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -411,6 +411,36 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
+            "name" : "GetDataDailyStatementPool",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "670956ec-4fb8-3c41-a9b2-83756aec0ad7",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d3ee8754-ce04-37c8-80b0-ba3508b2b688",
+            "name" : "DailyStatementPool",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -440,7 +470,7 @@
           "comments" : "",
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "PRIMARY",
+          "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "ca153205-5378-3e62-9d9f-ced8917d905c",
           "name" : "GetDataDailyStatementPool",
@@ -454,7 +484,7 @@
             "Proxy Type" : "http",
             "Connection Timeout" : "30 secs",
             "send-message-body" : "true",
-            "Authorization" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
+            "Authorization" : "${token}",
             "set-form-filename" : "true",
             "Always Output Response" : "true",
             "etag-max-cache-size" : "10MB",
@@ -462,7 +492,7 @@
             "idle-timeout" : "5 mins",
             "Use Chunked Encoding" : "false",
             "Follow Redirects" : "True",
-            "Remote URL" : "https://api.infini4d.com/statement/getDailyStatement",
+            "Remote URL" : "${pool_service}",
             "Content-Type" : "${mime.type}",
             "max-idle-connections" : "5",
             "Read Timeout" : "30 secs",
@@ -688,8 +718,8 @@
           },
           "runDurationMillis" : 0,
           "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 0 18 ? * * *",
-          "schedulingStrategy" : "CRON_DRIVEN",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
           "yieldDuration" : "1 sec"
@@ -946,6 +976,98 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.ConvertRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "PRIMARY",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "d3ee8754-ce04-37c8-80b0-ba3508b2b688",
+          "name" : "DailyStatementPool",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 320.0,
+            "y" : -144.0
+          },
+          "properties" : {
+            "character-set" : "UTF-8",
+            "File Size" : "0B",
+            "Batch Size" : "1",
+            "Unique FlowFiles" : "false",
+            "Data Format" : "Text",
+            "pool_service" : "https://api.infini4d.com/statement/getDailyStatement",
+            "token" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ"
+          },
+          "propertyDescriptors" : {
+            "character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "character-set",
+              "sensitive" : false
+            },
+            "File Size" : {
+              "displayName" : "File Size",
+              "identifiesControllerService" : false,
+              "name" : "File Size",
+              "sensitive" : false
+            },
+            "mime-type" : {
+              "displayName" : "Mime Type",
+              "identifiesControllerService" : false,
+              "name" : "mime-type",
+              "sensitive" : false
+            },
+            "generate-ff-custom-text" : {
+              "displayName" : "Custom Text",
+              "identifiesControllerService" : false,
+              "name" : "generate-ff-custom-text",
+              "sensitive" : false
+            },
+            "Batch Size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "Batch Size",
+              "sensitive" : false
+            },
+            "Unique FlowFiles" : {
+              "displayName" : "Unique FlowFiles",
+              "identifiesControllerService" : false,
+              "name" : "Unique FlowFiles",
+              "sensitive" : false
+            },
+            "Data Format" : {
+              "displayName" : "Data Format",
+              "identifiesControllerService" : false,
+              "name" : "Data Format",
+              "sensitive" : false
+            },
+            "pool_service" : {
+              "displayName" : "pool_service",
+              "identifiesControllerService" : false,
+              "name" : "pool_service",
+              "sensitive" : false
+            },
+            "token" : {
+              "displayName" : "token",
+              "identifiesControllerService" : false,
+              "name" : "token",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 0 18 ? * * *",
+          "schedulingStrategy" : "CRON_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],
