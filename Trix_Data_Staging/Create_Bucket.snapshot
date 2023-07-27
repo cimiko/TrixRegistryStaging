@@ -16,13 +16,13 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "cec62ac7-da04-300a-8f4b-c3a2d0022808",
+        "identifier" : "59674c01-c689-3528-a825-83303e06e73d",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Trix Staging",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 352.0,
+          "x" : 304.0,
           "y" : 72.0
         },
         "processGroups" : [ {
@@ -36,7 +36,7 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "cec62ac7-da04-300a-8f4b-c3a2d0022808",
+          "groupIdentifier" : "59674c01-c689-3528-a825-83303e06e73d",
           "identifier" : "720df9d1-9a2d-3bda-b9c7-84ff033ae599",
           "inputPorts" : [ ],
           "labels" : [ ],
@@ -75,7 +75,7 @@
               "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
               "flowId" : "60c9347c-44d3-4d76-b482-6956d02bbeb5",
               "registryUrl" : "http://10.25.147.34:82",
-              "version" : 8
+              "version" : 9
             }
           } ],
           "processors" : [ ],
