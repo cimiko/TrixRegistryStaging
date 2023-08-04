@@ -155,6 +155,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
+            "name" : "LogAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "1bb804a9-7446-3a29-90b0-6525f17fe96e",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "Validasi Jumlah Data" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+            "name" : "Validasi Last Log Data",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 1000000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
             "name" : "InsertDataToStaging",
             "type" : "PROCESSOR"
@@ -209,37 +239,30 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ {
-            "x" : 1061.0,
-            "y" : 481.3431396484375
-          }, {
-            "x" : 1061.0,
-            "y" : 531.3431396484375
-          } ],
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
-            "name" : "LogAttribute",
-            "type" : "PROCESSOR"
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+            "id" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
+            "name" : "Post Telegram",
+            "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "9f30e01e-2489-34ce-9038-af0eef2e3a0c",
+          "identifier" : "b5369948-cf3d-31ce-b2db-648fe7ca4099",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
+          "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "InsertDataToStaging",
+            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+            "name" : "Validasi Last Log Data",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -270,6 +293,36 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ca153205-5378-3e62-9d9f-ced8917d905c",
             "name" : "GetDataDailyStatementPool",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
+            "name" : "LogAttribute",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "db2bce9a-95fb-3e7d-ad74-3d94b4720263",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
+            "name" : "InsertDataToStaging",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -389,8 +442,8 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
-            "name" : "LogAttribute",
+            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+            "name" : "Validasi Last Log Data",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -458,7 +511,38 @@
           "x" : -390.58575439453125,
           "y" : 7.029449462890625
         },
-        "processGroups" : [ ],
+        "processGroups" : [ {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "inputPorts" : [ ],
+          "labels" : [ ],
+          "name" : "Post Telegram",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 1128.0,
+            "y" : 632.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { },
+          "versionedFlowCoordinates" : {
+            "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
+            "flowId" : "8fb831e8-a480-4811-a20d-a5b9a74ca7de",
+            "registryUrl" : "http://10.25.147.34:82",
+            "version" : 3
+          }
+        } ],
         "processors" : [ {
           "autoTerminatedRelationships" : [ "No Retry", "Original" ],
           "bulletinLevel" : "WARN",
@@ -1150,6 +1234,51 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+          "name" : "Validasi Last Log Data",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1144.0,
+            "y" : 440.0
+          },
+          "properties" : {
+            "Routing Strategy" : "Route to Property name",
+            "Validasi Jumlah Data" : "${fragment.count:ge(${fragment.index:plus(2)})}"
+          },
+          "propertyDescriptors" : {
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "Validasi Jumlah Data" : {
+              "displayName" : "Validasi Jumlah Data",
+              "identifiesControllerService" : false,
+              "name" : "Validasi Jumlah Data",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ ],

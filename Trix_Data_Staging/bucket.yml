@@ -2,9 +2,9 @@ flows:
   b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 9, file: Create_Bucket.snapshot, comments: menambah
       fitur di pool, author: anonymous, created: 1690482142697, flowName: Create Bucket,
     flowDesc: ''}
-  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 9, file: Get_Daily_Statement_Pool.snapshot,
-    comments: Menambahkan inisiasi data statement pool, author: anonymous, created: 1690482124019,
-    flowName: Get Daily Statement Pool, flowDesc: ''}
+  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 10, file: Get_Daily_Statement_Pool.snapshot,
+    comments: Menambahkan fitur sent data success Log to Telegram, author: anonymous,
+    created: 1691167753937, flowName: Get Daily Statement Pool, flowDesc: ''}
   8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 3, file: Post_Telegram.snapshot, comments: Menambahkan
       Send Logging to Telegram, author: anonymous, created: 1691167678818, flowName: Post
       Telegram, flowDesc: Send Message to Telegram}
