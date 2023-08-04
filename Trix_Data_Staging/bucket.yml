@@ -5,8 +5,8 @@ flows:
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 9, file: Get_Daily_Statement_Pool.snapshot,
     comments: Menambahkan inisiasi data statement pool, author: anonymous, created: 1690482124019,
     flowName: Get Daily Statement Pool, flowDesc: ''}
-  8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 1, file: Post_Telegram.snapshot, comments: Membuat
-      pipeline untuk post data ke telegram, author: anonymous, created: 1691153315825,
-    flowName: Post Telegram, flowDesc: Send Message to Telegram}
+  8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 2, file: Post_Telegram.snapshot, comments: membuat
+      variable chat_id, author: anonymous, created: 1691153741758, flowName: Post
+      Telegram, flowDesc: Send Message to Telegram}
 layoutVer: 1
 bucketId: 00603a19-c9b4-4583-824e-a7d5a8af2b6e

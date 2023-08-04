@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
             "name" : "LogAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "475319fe-8970-39ca-9028-4687bc1964a4",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "Response" ],
           "source" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
             "name" : "InvokeHTTP",
             "type" : "PROCESSOR"
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
             "name" : "InvokeHTTP",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "9a6d12cc-e762-318d-8e00-9d2501105065",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -62,7 +62,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "9812f170-ed80-3185-b3c8-c9542f8be622",
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
@@ -81,13 +81,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
             "name" : "InvokeHTTP",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "fffacad1-f07a-3d84-84fa-d48be7177293",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -98,7 +98,7 @@
           "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
           "source" : {
             "comments" : "",
-            "groupId" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
             "name" : "InvokeHTTP",
             "type" : "PROCESSOR"
@@ -112,18 +112,18 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+        "identifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Post Telegram",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 2336.0,
-          "y" : 136.0
+          "x" : 1288.0,
+          "y" : 432.0
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
+          "autoTerminatedRelationships" : [ "success" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
             "artifact" : "nifi-standard-nar",
@@ -134,7 +134,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
           "name" : "LogAttribute",
           "penaltyDuration" : "30 sec",
@@ -217,7 +217,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
           "name" : "InvokeHTTP",
           "penaltyDuration" : "30 sec",
@@ -237,7 +237,7 @@
             "idle-timeout" : "5 mins",
             "Use Chunked Encoding" : "false",
             "Follow Redirects" : "True",
-            "Remote URL" : "https://api.telegram.org/bot6242604672:AAF_HFD5tWL9q9rJeB1jRYbfjbBHpb67TEA/sendMessage?chat_id=-930621813&text=${message_log}",
+            "Remote URL" : "https://api.telegram.org/bot6242604672:AAF_HFD5tWL9q9rJeB1jRYbfjbBHpb67TEA/sendMessage?chat_id=${chat_id}&text=${message_log}",
             "Content-Type" : "${mime.type}",
             "max-idle-connections" : "5",
             "Read Timeout" : "15 secs",
@@ -474,7 +474,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "PRIMARY",
-          "groupIdentifier" : "4fe1087a-dd5d-339f-bd0d-9a5f332f78db",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "9812f170-ed80-3185-b3c8-c9542f8be622",
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
@@ -488,7 +488,8 @@
             "message_log" : "Ini dari NiFi",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
-            "Data Format" : "Text"
+            "Data Format" : "Text",
+            "chat_id" : "-930621813"
           },
           "propertyDescriptors" : {
             "character-set" : {
@@ -537,6 +538,12 @@
               "displayName" : "Data Format",
               "identifiesControllerService" : false,
               "name" : "Data Format",
+              "sensitive" : false
+            },
+            "chat_id" : {
+              "displayName" : "chat_id",
+              "identifiesControllerService" : false,
+              "name" : "chat_id",
               "sensitive" : false
             }
           },
