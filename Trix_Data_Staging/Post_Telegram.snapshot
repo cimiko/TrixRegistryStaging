@@ -59,10 +59,39 @@
           "prioritizers" : [ ],
           "selectedRelationships" : [ "" ],
           "source" : {
+            "comments" : "",
             "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
-            "name" : "Post Telegram",
+            "name" : "Daily Statement Pool Telegram",
             "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "id" : "2e52512e-088a-397b-870e-6def1ee398fa",
+            "name" : "Send Telegram",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "7ce5b393-8f33-3928-8328-6c8dfa214f0b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "id" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+            "name" : "Send Message",
+            "type" : "OUTPUT_PORT"
           },
           "zIndex" : 0
         }, {
@@ -93,6 +122,36 @@
             "type" : "OUTPUT_PORT"
           },
           "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 100000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "id" : "7b7d6998-0355-353d-89db-6776c3471b53",
+            "name" : "Daily Statement Pool To S3",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "3e882b84-f015-34d6-a91e-5c2c73acadd0",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+            "id" : "a94ff5fe-e4f2-3ad0-a2c1-d2307daaf8da",
+            "name" : "Daily Statement Pool S3 Telegram",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -104,13 +163,27 @@
         "identifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
         "inputPorts" : [ {
           "allowRemoteAccess" : false,
+          "comments" : "",
           "componentType" : "INPUT_PORT",
           "concurrentlySchedulableTaskCount" : 1,
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
-          "name" : "Post Telegram",
+          "name" : "Daily Statement Pool Telegram",
           "position" : {
             "x" : 2096.0,
+            "y" : -80.0
+          },
+          "type" : "INPUT_PORT"
+        }, {
+          "allowRemoteAccess" : false,
+          "comments" : "",
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "a94ff5fe-e4f2-3ad0-a2c1-d2307daaf8da",
+          "name" : "Daily Statement Pool S3 Telegram",
+          "position" : {
+            "x" : 3008.0,
             "y" : -80.0
           },
           "type" : "INPUT_PORT"
@@ -119,8 +192,8 @@
         "name" : "Post Telegram",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 1128.0,
-          "y" : 632.0
+          "x" : 32.0,
+          "y" : 640.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -772,6 +845,186 @@
           } ],
           "remoteProcessGroups" : [ ],
           "variables" : { }
+        }, {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+              "id" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+              "name" : "Send Message",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "identifier" : "7877a4bb-b036-39c4-9e11-41a3df8905d5",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+              "id" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+              "name" : "Logs Telegram Information",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+              "id" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+              "name" : "Logs Telegram Information",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "identifier" : "1f412adb-787f-3f0f-8122-00bc557ab27f",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+              "id" : "7b7d6998-0355-353d-89db-6776c3471b53",
+              "name" : "Daily Statement Pool To S3",
+              "type" : "INPUT_PORT"
+            },
+            "zIndex" : 0
+          } ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+          "inputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "comments" : "",
+            "componentType" : "INPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "identifier" : "7b7d6998-0355-353d-89db-6776c3471b53",
+            "name" : "Daily Statement Pool To S3",
+            "position" : {
+              "x" : 2144.0,
+              "y" : -48.0
+            },
+            "type" : "INPUT_PORT"
+          } ],
+          "labels" : [ ],
+          "name" : "Statement Pool to S3",
+          "outputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "componentType" : "OUTPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "identifier" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+            "name" : "Send Message",
+            "position" : {
+              "x" : 2144.0,
+              "y" : 232.0
+            },
+            "type" : "OUTPUT_PORT"
+          } ],
+          "position" : {
+            "x" : 2936.0,
+            "y" : 16.0
+          },
+          "processGroups" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-update-attribute-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.14.0"
+            },
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "537ad63d-f422-3f3a-8c59-7bc07e35a810",
+            "identifier" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+            "name" : "Logs Telegram Information",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 2088.0,
+              "y" : 48.0
+            },
+            "properties" : {
+              "Store State" : "Do not store state",
+              "canonical-value-lookup-cache-size" : "100",
+              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} has been successfully saved into s3, the file size saved is ${fileSize} byte atau ${filesize}. Logs: ${nel}",
+              "chat_id" : "-930621813"
+            },
+            "propertyDescriptors" : {
+              "Delete Attributes Expression" : {
+                "displayName" : "Delete Attributes Expression",
+                "identifiesControllerService" : false,
+                "name" : "Delete Attributes Expression",
+                "sensitive" : false
+              },
+              "Store State" : {
+                "displayName" : "Store State",
+                "identifiesControllerService" : false,
+                "name" : "Store State",
+                "sensitive" : false
+              },
+              "canonical-value-lookup-cache-size" : {
+                "displayName" : "Cache Value Lookup Cache Size",
+                "identifiesControllerService" : false,
+                "name" : "canonical-value-lookup-cache-size",
+                "sensitive" : false
+              },
+              "message_log" : {
+                "displayName" : "message_log",
+                "identifiesControllerService" : false,
+                "name" : "message_log",
+                "sensitive" : false
+              },
+              "Stateful Variables Initial Value" : {
+                "displayName" : "Stateful Variables Initial Value",
+                "identifiesControllerService" : false,
+                "name" : "Stateful Variables Initial Value",
+                "sensitive" : false
+              },
+              "chat_id" : {
+                "displayName" : "chat_id",
+                "identifiesControllerService" : false,
+                "name" : "chat_id",
+                "sensitive" : false
+              }
+            },
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+            "yieldDuration" : "1 sec"
+          } ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
         } ],
         "processors" : [ {
           "autoTerminatedRelationships" : [ ],
@@ -859,7 +1112,7 @@
             }
           },
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },

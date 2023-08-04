@@ -5,8 +5,8 @@ flows:
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 10, file: Get_Daily_Statement_Pool.snapshot,
     comments: Menambahkan fitur sent data success Log to Telegram, author: anonymous,
     created: 1691167753937, flowName: Get Daily Statement Pool, flowDesc: ''}
-  8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 3, file: Post_Telegram.snapshot, comments: Menambahkan
-      Send Logging to Telegram, author: anonymous, created: 1691167678818, flowName: Post
-      Telegram, flowDesc: Send Message to Telegram}
+  8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 4, file: Post_Telegram.snapshot, comments: Menambahkan
+      Logs Message daily statement pool s3 to telegram., author: anonymous, created: 1691170474447,
+    flowName: Post Telegram, flowDesc: Send Message to Telegram}
 layoutVer: 1
 bucketId: 00603a19-c9b4-4583-824e-a7d5a8af2b6e
