@@ -8,9 +8,9 @@ flows:
     created: 1691170995452
     flowName: Create Bucket
     flowDesc: ''
-  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 11, file: Get_Daily_Statement_Pool.snapshot,
-    comments: menambahkan fitur backup data daily statement pool to S3, author: anonymous,
-    created: 1691170973918, flowName: Get Daily Statement Pool, flowDesc: ''}
+  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 12, file: Get_Daily_Statement_Pool.snapshot,
+    comments: menambahkan pesan logs, author: anonymous, created: 1691171254071, flowName: Get
+      Daily Statement Pool, flowDesc: ''}
   8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 6, file: Post_Telegram.snapshot, comments: Menambahkan
       message info di telegram message, author: anonymous, created: 1691171232920,
     flowName: Post Telegram, flowDesc: Send Message to Telegram}

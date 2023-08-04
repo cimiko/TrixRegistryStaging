@@ -570,7 +570,7 @@
             "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
             "flowId" : "8fb831e8-a480-4811-a20d-a5b9a74ca7de",
             "registryUrl" : "http://10.25.147.34:82",
-            "version" : 5
+            "version" : 6
           }
         } ],
         "processors" : [ {
