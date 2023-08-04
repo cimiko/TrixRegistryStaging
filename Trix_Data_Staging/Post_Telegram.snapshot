@@ -43,6 +43,34 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+            "id" : "52c82ff9-c4d9-36ab-8cb0-d7bf60e3b881",
+            "name" : "Output Logs",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "d1b5962e-9e2f-3058-8fbd-d79380e9bb97",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "id" : "c4442707-d9c9-3841-9099-490ca24f1289",
+            "name" : "Output Logs",
+            "type" : "OUTPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
             "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
             "id" : "7b7d6998-0355-353d-89db-6776c3471b53",
             "name" : "Daily Statement Pool",
@@ -190,7 +218,19 @@
         } ],
         "labels" : [ ],
         "name" : "Post Telegram",
-        "outputPorts" : [ ],
+        "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "52c82ff9-c4d9-36ab-8cb0-d7bf60e3b881",
+          "name" : "Output Logs",
+          "position" : {
+            "x" : 2552.0,
+            "y" : 480.0
+          },
+          "type" : "OUTPUT_PORT"
+        } ],
         "position" : {
           "x" : 32.0,
           "y" : 640.0
@@ -408,36 +448,6 @@
           }, {
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-              "id" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
-              "name" : "LogAttribute",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-            "identifier" : "573ea552-a8bc-3af7-8c23-7809122df8e8",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "Response" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-              "name" : "Send Message To Telegram",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
             "bends" : [ {
               "x" : 2965.0,
               "y" : 287.0
@@ -471,6 +481,35 @@
               "type" : "PROCESSOR"
             },
             "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c4442707-d9c9-3841-9099-490ca24f1289",
+              "name" : "Output Logs",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "bbc46519-8d50-31fe-b030-39a0ed9863ce",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "Response" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
           } ],
           "controllerServices" : [ ],
           "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -496,96 +535,25 @@
           } ],
           "labels" : [ ],
           "name" : "Send Message Telegram",
-          "outputPorts" : [ ],
+          "outputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "componentType" : "OUTPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "c4442707-d9c9-3841-9099-490ca24f1289",
+            "name" : "Output Logs",
+            "position" : {
+              "x" : 2544.0,
+              "y" : 424.0
+            },
+            "type" : "OUTPUT_PORT"
+          } ],
           "position" : {
             "x" : 2480.0,
             "y" : 256.0
           },
           "processGroups" : [ ],
           "processors" : [ {
-            "autoTerminatedRelationships" : [ "success" ],
-            "bulletinLevel" : "WARN",
-            "bundle" : {
-              "artifact" : "nifi-standard-nar",
-              "group" : "org.apache.nifi",
-              "version" : "1.14.0"
-            },
-            "comments" : "",
-            "componentType" : "PROCESSOR",
-            "concurrentlySchedulableTaskCount" : 1,
-            "executionNode" : "ALL",
-            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-            "identifier" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
-            "name" : "LogAttribute",
-            "penaltyDuration" : "30 sec",
-            "position" : {
-              "x" : 2496.0,
-              "y" : 464.0
-            },
-            "properties" : {
-              "character-set" : "UTF-8",
-              "Log Level" : "info",
-              "attributes-to-log-regex" : ".*",
-              "Log Payload" : "false"
-            },
-            "propertyDescriptors" : {
-              "Log prefix" : {
-                "displayName" : "Log prefix",
-                "identifiesControllerService" : false,
-                "name" : "Log prefix",
-                "sensitive" : false
-              },
-              "character-set" : {
-                "displayName" : "Character Set",
-                "identifiesControllerService" : false,
-                "name" : "character-set",
-                "sensitive" : false
-              },
-              "Log Level" : {
-                "displayName" : "Log Level",
-                "identifiesControllerService" : false,
-                "name" : "Log Level",
-                "sensitive" : false
-              },
-              "attributes-to-ignore-regex" : {
-                "displayName" : "Attributes to Ignore by Regular Expression",
-                "identifiesControllerService" : false,
-                "name" : "attributes-to-ignore-regex",
-                "sensitive" : false
-              },
-              "Attributes to Ignore" : {
-                "displayName" : "Attributes to Ignore",
-                "identifiesControllerService" : false,
-                "name" : "Attributes to Ignore",
-                "sensitive" : false
-              },
-              "Attributes to Log" : {
-                "displayName" : "Attributes to Log",
-                "identifiesControllerService" : false,
-                "name" : "Attributes to Log",
-                "sensitive" : false
-              },
-              "attributes-to-log-regex" : {
-                "displayName" : "Attributes to Log by Regular Expression",
-                "identifiesControllerService" : false,
-                "name" : "attributes-to-log-regex",
-                "sensitive" : false
-              },
-              "Log Payload" : {
-                "displayName" : "Log Payload",
-                "identifiesControllerService" : false,
-                "name" : "Log Payload",
-                "sensitive" : false
-              }
-            },
-            "runDurationMillis" : 0,
-            "scheduledState" : "ENABLED",
-            "schedulingPeriod" : "0 sec",
-            "schedulingStrategy" : "TIMER_DRIVEN",
-            "style" : { },
-            "type" : "org.apache.nifi.processors.standard.LogAttribute",
-            "yieldDuration" : "1 sec"
-          }, {
             "autoTerminatedRelationships" : [ "Original" ],
             "bulletinLevel" : "WARN",
             "bundle" : {
