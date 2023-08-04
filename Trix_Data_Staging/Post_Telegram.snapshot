@@ -14,45 +14,14 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "comments" : "",
-            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-            "id" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
-            "name" : "LogAttribute",
-            "type" : "PROCESSOR"
+            "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "id" : "2e52512e-088a-397b-870e-6def1ee398fa",
+            "name" : "Send Telegram",
+            "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-          "identifier" : "475319fe-8970-39ca-9028-4687bc1964a4",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "Response" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-            "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-            "name" : "InvokeHTTP",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-            "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-            "name" : "InvokeHTTP",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-          "identifier" : "9a6d12cc-e762-318d-8e00-9d2501105065",
+          "identifier" : "b127d1d5-97e7-37a6-aeb7-92338c2a6c0d",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -64,44 +33,64 @@
             "comments" : "",
             "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
             "id" : "9812f170-ed80-3185-b3c8-c9542f8be622",
-            "name" : "GenerateFlowFile",
+            "name" : "Testing",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 2965.0,
-            "y" : 295.0
-          }, {
-            "x" : 2965.0,
-            "y" : 345.0
-          } ],
+          "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
-            "comments" : "",
-            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-            "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-            "name" : "InvokeHTTP",
-            "type" : "PROCESSOR"
+            "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "id" : "7b7d6998-0355-353d-89db-6776c3471b53",
+            "name" : "Daily Statement Pool",
+            "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-          "identifier" : "fffacad1-f07a-3d84-84fa-d48be7177293",
+          "identifier" : "860ed89b-bdd9-36b8-ab91-d75b9323ba57",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+          "selectedRelationships" : [ "" ],
           "source" : {
-            "comments" : "",
             "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-            "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-            "name" : "InvokeHTTP",
-            "type" : "PROCESSOR"
+            "id" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
+            "name" : "Post Telegram",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "id" : "2e52512e-088a-397b-870e-6def1ee398fa",
+            "name" : "Send Telegram",
+            "type" : "INPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "d31b733b-b2f7-3bc3-b94c-6d45e8c2fd62",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "id" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+            "name" : "Send Message",
+            "type" : "OUTPUT_PORT"
           },
           "zIndex" : 0
         } ],
@@ -113,356 +102,678 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
         "identifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-        "inputPorts" : [ ],
+        "inputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+          "identifier" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
+          "name" : "Post Telegram",
+          "position" : {
+            "x" : 2096.0,
+            "y" : -80.0
+          },
+          "type" : "INPUT_PORT"
+        } ],
         "labels" : [ ],
         "name" : "Post Telegram",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 1288.0,
-          "y" : 432.0
+          "x" : 1128.0,
+          "y" : 632.0
         },
-        "processGroups" : [ ],
-        "processors" : [ {
-          "autoTerminatedRelationships" : [ "success" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.14.0"
-          },
+        "processGroups" : [ {
           "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+              "id" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+              "name" : "Send Message",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "identifier" : "7877a4bb-b036-39c4-9e11-41a3df8905d5",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+              "id" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+              "name" : "Logs Telegram Information",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+              "id" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+              "name" : "Logs Telegram Information",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "identifier" : "1f412adb-787f-3f0f-8122-00bc557ab27f",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+              "id" : "7b7d6998-0355-353d-89db-6776c3471b53",
+              "name" : "Daily Statement Pool",
+              "type" : "INPUT_PORT"
+            },
+            "zIndex" : 0
+          } ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-          "identifier" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
-          "name" : "LogAttribute",
-          "penaltyDuration" : "30 sec",
+          "identifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+          "inputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "componentType" : "INPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "identifier" : "7b7d6998-0355-353d-89db-6776c3471b53",
+            "name" : "Daily Statement Pool",
+            "position" : {
+              "x" : 2144.0,
+              "y" : -48.0
+            },
+            "type" : "INPUT_PORT"
+          } ],
+          "labels" : [ ],
+          "name" : "Statement Pool",
+          "outputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "componentType" : "OUTPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "identifier" : "5a52ad16-fc14-33f9-864d-c60c69a6fa1e",
+            "name" : "Send Message",
+            "position" : {
+              "x" : 2144.0,
+              "y" : 232.0
+            },
+            "type" : "OUTPUT_PORT"
+          } ],
           "position" : {
-            "x" : 2496.0,
-            "y" : 472.0
+            "x" : 2024.0,
+            "y" : 16.0
           },
-          "properties" : {
-            "character-set" : "UTF-8",
-            "Log Level" : "info",
-            "attributes-to-log-regex" : ".*",
-            "Log Payload" : "false"
-          },
-          "propertyDescriptors" : {
-            "Log prefix" : {
-              "displayName" : "Log prefix",
-              "identifiesControllerService" : false,
-              "name" : "Log prefix",
-              "sensitive" : false
+          "processGroups" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-update-attribute-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.14.0"
             },
-            "character-set" : {
-              "displayName" : "Character Set",
-              "identifiesControllerService" : false,
-              "name" : "character-set",
-              "sensitive" : false
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "c04d647b-be1c-3e3c-be46-f139a4d503a9",
+            "identifier" : "eef94416-cdb2-3265-af75-ae5b0d678e6a",
+            "name" : "Logs Telegram Information",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 2088.0,
+              "y" : 64.0
             },
-            "Log Level" : {
-              "displayName" : "Log Level",
-              "identifiesControllerService" : false,
-              "name" : "Log Level",
-              "sensitive" : false
+            "properties" : {
+              "Store State" : "Do not store state",
+              "canonical-value-lookup-cache-size" : "100",
+              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} has been successfully saved. Logs: ${nel}  ",
+              "chat_id" : "-930621813"
             },
-            "attributes-to-ignore-regex" : {
-              "displayName" : "Attributes to Ignore by Regular Expression",
-              "identifiesControllerService" : false,
-              "name" : "attributes-to-ignore-regex",
-              "sensitive" : false
+            "propertyDescriptors" : {
+              "Delete Attributes Expression" : {
+                "displayName" : "Delete Attributes Expression",
+                "identifiesControllerService" : false,
+                "name" : "Delete Attributes Expression",
+                "sensitive" : false
+              },
+              "Store State" : {
+                "displayName" : "Store State",
+                "identifiesControllerService" : false,
+                "name" : "Store State",
+                "sensitive" : false
+              },
+              "canonical-value-lookup-cache-size" : {
+                "displayName" : "Cache Value Lookup Cache Size",
+                "identifiesControllerService" : false,
+                "name" : "canonical-value-lookup-cache-size",
+                "sensitive" : false
+              },
+              "message_log" : {
+                "displayName" : "message_log",
+                "identifiesControllerService" : false,
+                "name" : "message_log",
+                "sensitive" : false
+              },
+              "Stateful Variables Initial Value" : {
+                "displayName" : "Stateful Variables Initial Value",
+                "identifiesControllerService" : false,
+                "name" : "Stateful Variables Initial Value",
+                "sensitive" : false
+              },
+              "chat_id" : {
+                "displayName" : "chat_id",
+                "identifiesControllerService" : false,
+                "name" : "chat_id",
+                "sensitive" : false
+              }
             },
-            "Attributes to Ignore" : {
-              "displayName" : "Attributes to Ignore",
-              "identifiesControllerService" : false,
-              "name" : "Attributes to Ignore",
-              "sensitive" : false
-            },
-            "Attributes to Log" : {
-              "displayName" : "Attributes to Log",
-              "identifiesControllerService" : false,
-              "name" : "Attributes to Log",
-              "sensitive" : false
-            },
-            "attributes-to-log-regex" : {
-              "displayName" : "Attributes to Log by Regular Expression",
-              "identifiesControllerService" : false,
-              "name" : "attributes-to-log-regex",
-              "sensitive" : false
-            },
-            "Log Payload" : {
-              "displayName" : "Log Payload",
-              "identifiesControllerService" : false,
-              "name" : "Log Payload",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.LogAttribute",
-          "yieldDuration" : "1 sec"
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+            "yieldDuration" : "1 sec"
+          } ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
         }, {
-          "autoTerminatedRelationships" : [ "Original" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.14.0"
-          },
           "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "263a272c-cc84-3a96-abd5-086cccbbe62a",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "2e52512e-088a-397b-870e-6def1ee398fa",
+              "name" : "Send Telegram",
+              "type" : "INPUT_PORT"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
+              "name" : "LogAttribute",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "573ea552-a8bc-3af7-8c23-7809122df8e8",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "Response" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
+              "x" : 2965.0,
+              "y" : 287.0
+            }, {
+              "x" : 2965.0,
+              "y" : 337.0
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "f74ea5f3-7804-3682-b05c-26f4666c03d4",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          } ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
-          "identifier" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
-          "name" : "InvokeHTTP",
-          "penaltyDuration" : "30 sec",
+          "identifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+          "inputPorts" : [ {
+            "allowRemoteAccess" : false,
+            "componentType" : "INPUT_PORT",
+            "concurrentlySchedulableTaskCount" : 1,
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "2e52512e-088a-397b-870e-6def1ee398fa",
+            "name" : "Send Telegram",
+            "position" : {
+              "x" : 2552.0,
+              "y" : 168.0
+            },
+            "type" : "INPUT_PORT"
+          } ],
+          "labels" : [ ],
+          "name" : "Send Message Telegram",
+          "outputPorts" : [ ],
           "position" : {
-            "x" : 2496.0,
+            "x" : 2480.0,
             "y" : 256.0
           },
-          "properties" : {
-            "use-etag" : "false",
-            "Proxy Type" : "http",
-            "Connection Timeout" : "5 secs",
-            "send-message-body" : "true",
-            "set-form-filename" : "true",
-            "Always Output Response" : "false",
-            "etag-max-cache-size" : "10MB",
-            "disable-http2" : "False",
-            "idle-timeout" : "5 mins",
-            "Use Chunked Encoding" : "false",
-            "Follow Redirects" : "True",
-            "Remote URL" : "https://api.telegram.org/bot6242604672:AAF_HFD5tWL9q9rJeB1jRYbfjbBHpb67TEA/sendMessage?chat_id=${chat_id}&text=${message_log}",
-            "Content-Type" : "${mime.type}",
-            "max-idle-connections" : "5",
-            "Read Timeout" : "15 secs",
-            "Max Length To Put In Attribute" : "256",
-            "ignore-response-content" : "false",
-            "Digest Authentication" : "false",
-            "HTTP Method" : "POST",
-            "Add Response Headers to Request" : "false",
-            "Include Date Header" : "True",
-            "Penalize on \"No Retry\"" : "false"
-          },
-          "propertyDescriptors" : {
-            "Proxy Host" : {
-              "displayName" : "Proxy Host",
-              "identifiesControllerService" : false,
-              "name" : "Proxy Host",
-              "sensitive" : false
+          "processGroups" : [ ],
+          "processors" : [ {
+            "autoTerminatedRelationships" : [ "success" ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.14.0"
             },
-            "Attributes to Send" : {
-              "displayName" : "Attributes to Send",
-              "identifiesControllerService" : false,
-              "name" : "Attributes to Send",
-              "sensitive" : false
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "55ef10c7-fb30-3f76-bdd5-caa05dd57af6",
+            "name" : "LogAttribute",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 2496.0,
+              "y" : 464.0
             },
-            "use-etag" : {
-              "displayName" : "Use HTTP ETag",
-              "identifiesControllerService" : false,
-              "name" : "use-etag",
-              "sensitive" : false
+            "properties" : {
+              "character-set" : "UTF-8",
+              "Log Level" : "info",
+              "attributes-to-log-regex" : ".*",
+              "Log Payload" : "false"
             },
-            "proxy-configuration-service" : {
-              "displayName" : "Proxy Configuration Service",
-              "identifiesControllerService" : true,
-              "name" : "proxy-configuration-service",
-              "sensitive" : false
+            "propertyDescriptors" : {
+              "Log prefix" : {
+                "displayName" : "Log prefix",
+                "identifiesControllerService" : false,
+                "name" : "Log prefix",
+                "sensitive" : false
+              },
+              "character-set" : {
+                "displayName" : "Character Set",
+                "identifiesControllerService" : false,
+                "name" : "character-set",
+                "sensitive" : false
+              },
+              "Log Level" : {
+                "displayName" : "Log Level",
+                "identifiesControllerService" : false,
+                "name" : "Log Level",
+                "sensitive" : false
+              },
+              "attributes-to-ignore-regex" : {
+                "displayName" : "Attributes to Ignore by Regular Expression",
+                "identifiesControllerService" : false,
+                "name" : "attributes-to-ignore-regex",
+                "sensitive" : false
+              },
+              "Attributes to Ignore" : {
+                "displayName" : "Attributes to Ignore",
+                "identifiesControllerService" : false,
+                "name" : "Attributes to Ignore",
+                "sensitive" : false
+              },
+              "Attributes to Log" : {
+                "displayName" : "Attributes to Log",
+                "identifiesControllerService" : false,
+                "name" : "Attributes to Log",
+                "sensitive" : false
+              },
+              "attributes-to-log-regex" : {
+                "displayName" : "Attributes to Log by Regular Expression",
+                "identifiesControllerService" : false,
+                "name" : "attributes-to-log-regex",
+                "sensitive" : false
+              },
+              "Log Payload" : {
+                "displayName" : "Log Payload",
+                "identifiesControllerService" : false,
+                "name" : "Log Payload",
+                "sensitive" : false
+              }
             },
-            "Proxy Type" : {
-              "displayName" : "Proxy Type",
-              "identifiesControllerService" : false,
-              "name" : "Proxy Type",
-              "sensitive" : false
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.LogAttribute",
+            "yieldDuration" : "1 sec"
+          }, {
+            "autoTerminatedRelationships" : [ "Original" ],
+            "bulletinLevel" : "WARN",
+            "bundle" : {
+              "artifact" : "nifi-standard-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.14.0"
             },
-            "Basic Authentication Password" : {
-              "displayName" : "Basic Authentication Password",
-              "identifiesControllerService" : false,
-              "name" : "Basic Authentication Password",
-              "sensitive" : true
+            "comments" : "",
+            "componentType" : "PROCESSOR",
+            "concurrentlySchedulableTaskCount" : 1,
+            "executionNode" : "ALL",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+            "name" : "Send Message To Telegram",
+            "penaltyDuration" : "30 sec",
+            "position" : {
+              "x" : 2496.0,
+              "y" : 248.0
             },
-            "Connection Timeout" : {
-              "displayName" : "Connection Timeout",
-              "identifiesControllerService" : false,
-              "name" : "Connection Timeout",
-              "sensitive" : false
+            "properties" : {
+              "use-etag" : "false",
+              "Proxy Type" : "http",
+              "Connection Timeout" : "5 secs",
+              "send-message-body" : "true",
+              "set-form-filename" : "true",
+              "Always Output Response" : "false",
+              "etag-max-cache-size" : "10MB",
+              "disable-http2" : "False",
+              "idle-timeout" : "5 mins",
+              "Use Chunked Encoding" : "false",
+              "Follow Redirects" : "True",
+              "Remote URL" : "https://api.telegram.org/bot6242604672:AAF_HFD5tWL9q9rJeB1jRYbfjbBHpb67TEA/sendMessage?chat_id=${chat_id}&text=${message_log}",
+              "Content-Type" : "${mime.type}",
+              "max-idle-connections" : "5",
+              "Read Timeout" : "15 secs",
+              "Max Length To Put In Attribute" : "256",
+              "ignore-response-content" : "false",
+              "Digest Authentication" : "false",
+              "HTTP Method" : "POST",
+              "Add Response Headers to Request" : "false",
+              "Include Date Header" : "True",
+              "Penalize on \"No Retry\"" : "false"
             },
-            "send-message-body" : {
-              "displayName" : "Send Message Body",
-              "identifiesControllerService" : false,
-              "name" : "send-message-body",
-              "sensitive" : false
+            "propertyDescriptors" : {
+              "Proxy Host" : {
+                "displayName" : "Proxy Host",
+                "identifiesControllerService" : false,
+                "name" : "Proxy Host",
+                "sensitive" : false
+              },
+              "Attributes to Send" : {
+                "displayName" : "Attributes to Send",
+                "identifiesControllerService" : false,
+                "name" : "Attributes to Send",
+                "sensitive" : false
+              },
+              "use-etag" : {
+                "displayName" : "Use HTTP ETag",
+                "identifiesControllerService" : false,
+                "name" : "use-etag",
+                "sensitive" : false
+              },
+              "proxy-configuration-service" : {
+                "displayName" : "Proxy Configuration Service",
+                "identifiesControllerService" : true,
+                "name" : "proxy-configuration-service",
+                "sensitive" : false
+              },
+              "Proxy Type" : {
+                "displayName" : "Proxy Type",
+                "identifiesControllerService" : false,
+                "name" : "Proxy Type",
+                "sensitive" : false
+              },
+              "Basic Authentication Password" : {
+                "displayName" : "Basic Authentication Password",
+                "identifiesControllerService" : false,
+                "name" : "Basic Authentication Password",
+                "sensitive" : true
+              },
+              "Connection Timeout" : {
+                "displayName" : "Connection Timeout",
+                "identifiesControllerService" : false,
+                "name" : "Connection Timeout",
+                "sensitive" : false
+              },
+              "send-message-body" : {
+                "displayName" : "Send Message Body",
+                "identifiesControllerService" : false,
+                "name" : "send-message-body",
+                "sensitive" : false
+              },
+              "set-form-filename" : {
+                "displayName" : "Set FlowFile Form Data File Name",
+                "identifiesControllerService" : false,
+                "name" : "set-form-filename",
+                "sensitive" : false
+              },
+              "Always Output Response" : {
+                "displayName" : "Always Output Response",
+                "identifiesControllerService" : false,
+                "name" : "Always Output Response",
+                "sensitive" : false
+              },
+              "etag-max-cache-size" : {
+                "displayName" : "Maximum ETag Cache Size",
+                "identifiesControllerService" : false,
+                "name" : "etag-max-cache-size",
+                "sensitive" : false
+              },
+              "disable-http2" : {
+                "displayName" : "Disable HTTP/2",
+                "identifiesControllerService" : false,
+                "name" : "disable-http2",
+                "sensitive" : false
+              },
+              "idle-timeout" : {
+                "displayName" : "Idle Timeout",
+                "identifiesControllerService" : false,
+                "name" : "idle-timeout",
+                "sensitive" : false
+              },
+              "Put Response Body In Attribute" : {
+                "displayName" : "Put Response Body In Attribute",
+                "identifiesControllerService" : false,
+                "name" : "Put Response Body In Attribute",
+                "sensitive" : false
+              },
+              "Use Chunked Encoding" : {
+                "displayName" : "Use Chunked Encoding",
+                "identifiesControllerService" : false,
+                "name" : "Use Chunked Encoding",
+                "sensitive" : false
+              },
+              "Follow Redirects" : {
+                "displayName" : "Follow Redirects",
+                "identifiesControllerService" : false,
+                "name" : "Follow Redirects",
+                "sensitive" : false
+              },
+              "Remote URL" : {
+                "displayName" : "Remote URL",
+                "identifiesControllerService" : false,
+                "name" : "Remote URL",
+                "sensitive" : false
+              },
+              "Content-Type" : {
+                "displayName" : "Content-Type",
+                "identifiesControllerService" : false,
+                "name" : "Content-Type",
+                "sensitive" : false
+              },
+              "form-body-form-name" : {
+                "displayName" : "FlowFile Form Data Name",
+                "identifiesControllerService" : false,
+                "name" : "form-body-form-name",
+                "sensitive" : false
+              },
+              "max-idle-connections" : {
+                "displayName" : "Max Idle Connections",
+                "identifiesControllerService" : false,
+                "name" : "max-idle-connections",
+                "sensitive" : false
+              },
+              "invokehttp-proxy-user" : {
+                "displayName" : "Proxy Username",
+                "identifiesControllerService" : false,
+                "name" : "invokehttp-proxy-user",
+                "sensitive" : false
+              },
+              "Read Timeout" : {
+                "displayName" : "Read Timeout",
+                "identifiesControllerService" : false,
+                "name" : "Read Timeout",
+                "sensitive" : false
+              },
+              "Max Length To Put In Attribute" : {
+                "displayName" : "Max Length To Put In Attribute",
+                "identifiesControllerService" : false,
+                "name" : "Max Length To Put In Attribute",
+                "sensitive" : false
+              },
+              "invokehttp-proxy-password" : {
+                "displayName" : "Proxy Password",
+                "identifiesControllerService" : false,
+                "name" : "invokehttp-proxy-password",
+                "sensitive" : true
+              },
+              "ignore-response-content" : {
+                "displayName" : "Ignore response's content",
+                "identifiesControllerService" : false,
+                "name" : "ignore-response-content",
+                "sensitive" : false
+              },
+              "Proxy Port" : {
+                "displayName" : "Proxy Port",
+                "identifiesControllerService" : false,
+                "name" : "Proxy Port",
+                "sensitive" : false
+              },
+              "SSL Context Service" : {
+                "displayName" : "SSL Context Service",
+                "identifiesControllerService" : true,
+                "name" : "SSL Context Service",
+                "sensitive" : false
+              },
+              "Digest Authentication" : {
+                "displayName" : "Use Digest Authentication",
+                "identifiesControllerService" : false,
+                "name" : "Digest Authentication",
+                "sensitive" : false
+              },
+              "HTTP Method" : {
+                "displayName" : "HTTP Method",
+                "identifiesControllerService" : false,
+                "name" : "HTTP Method",
+                "sensitive" : false
+              },
+              "Add Response Headers to Request" : {
+                "displayName" : "Add Response Headers to Request",
+                "identifiesControllerService" : false,
+                "name" : "Add Response Headers to Request",
+                "sensitive" : false
+              },
+              "Basic Authentication Username" : {
+                "displayName" : "Basic Authentication Username",
+                "identifiesControllerService" : false,
+                "name" : "Basic Authentication Username",
+                "sensitive" : false
+              },
+              "Include Date Header" : {
+                "displayName" : "Include Date Header",
+                "identifiesControllerService" : false,
+                "name" : "Include Date Header",
+                "sensitive" : false
+              },
+              "Penalize on \"No Retry\"" : {
+                "displayName" : "Penalize on \"No Retry\"",
+                "identifiesControllerService" : false,
+                "name" : "Penalize on \"No Retry\"",
+                "sensitive" : false
+              },
+              "Useragent" : {
+                "displayName" : "Useragent",
+                "identifiesControllerService" : false,
+                "name" : "Useragent",
+                "sensitive" : false
+              }
             },
-            "set-form-filename" : {
-              "displayName" : "Set FlowFile Form Data File Name",
-              "identifiesControllerService" : false,
-              "name" : "set-form-filename",
-              "sensitive" : false
-            },
-            "Always Output Response" : {
-              "displayName" : "Always Output Response",
-              "identifiesControllerService" : false,
-              "name" : "Always Output Response",
-              "sensitive" : false
-            },
-            "etag-max-cache-size" : {
-              "displayName" : "Maximum ETag Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "etag-max-cache-size",
-              "sensitive" : false
-            },
-            "disable-http2" : {
-              "displayName" : "Disable HTTP/2",
-              "identifiesControllerService" : false,
-              "name" : "disable-http2",
-              "sensitive" : false
-            },
-            "idle-timeout" : {
-              "displayName" : "Idle Timeout",
-              "identifiesControllerService" : false,
-              "name" : "idle-timeout",
-              "sensitive" : false
-            },
-            "Put Response Body In Attribute" : {
-              "displayName" : "Put Response Body In Attribute",
-              "identifiesControllerService" : false,
-              "name" : "Put Response Body In Attribute",
-              "sensitive" : false
-            },
-            "Use Chunked Encoding" : {
-              "displayName" : "Use Chunked Encoding",
-              "identifiesControllerService" : false,
-              "name" : "Use Chunked Encoding",
-              "sensitive" : false
-            },
-            "Follow Redirects" : {
-              "displayName" : "Follow Redirects",
-              "identifiesControllerService" : false,
-              "name" : "Follow Redirects",
-              "sensitive" : false
-            },
-            "Remote URL" : {
-              "displayName" : "Remote URL",
-              "identifiesControllerService" : false,
-              "name" : "Remote URL",
-              "sensitive" : false
-            },
-            "Content-Type" : {
-              "displayName" : "Content-Type",
-              "identifiesControllerService" : false,
-              "name" : "Content-Type",
-              "sensitive" : false
-            },
-            "form-body-form-name" : {
-              "displayName" : "FlowFile Form Data Name",
-              "identifiesControllerService" : false,
-              "name" : "form-body-form-name",
-              "sensitive" : false
-            },
-            "max-idle-connections" : {
-              "displayName" : "Max Idle Connections",
-              "identifiesControllerService" : false,
-              "name" : "max-idle-connections",
-              "sensitive" : false
-            },
-            "invokehttp-proxy-user" : {
-              "displayName" : "Proxy Username",
-              "identifiesControllerService" : false,
-              "name" : "invokehttp-proxy-user",
-              "sensitive" : false
-            },
-            "Read Timeout" : {
-              "displayName" : "Read Timeout",
-              "identifiesControllerService" : false,
-              "name" : "Read Timeout",
-              "sensitive" : false
-            },
-            "Max Length To Put In Attribute" : {
-              "displayName" : "Max Length To Put In Attribute",
-              "identifiesControllerService" : false,
-              "name" : "Max Length To Put In Attribute",
-              "sensitive" : false
-            },
-            "invokehttp-proxy-password" : {
-              "displayName" : "Proxy Password",
-              "identifiesControllerService" : false,
-              "name" : "invokehttp-proxy-password",
-              "sensitive" : true
-            },
-            "ignore-response-content" : {
-              "displayName" : "Ignore response's content",
-              "identifiesControllerService" : false,
-              "name" : "ignore-response-content",
-              "sensitive" : false
-            },
-            "Proxy Port" : {
-              "displayName" : "Proxy Port",
-              "identifiesControllerService" : false,
-              "name" : "Proxy Port",
-              "sensitive" : false
-            },
-            "SSL Context Service" : {
-              "displayName" : "SSL Context Service",
-              "identifiesControllerService" : true,
-              "name" : "SSL Context Service",
-              "sensitive" : false
-            },
-            "Digest Authentication" : {
-              "displayName" : "Use Digest Authentication",
-              "identifiesControllerService" : false,
-              "name" : "Digest Authentication",
-              "sensitive" : false
-            },
-            "HTTP Method" : {
-              "displayName" : "HTTP Method",
-              "identifiesControllerService" : false,
-              "name" : "HTTP Method",
-              "sensitive" : false
-            },
-            "Add Response Headers to Request" : {
-              "displayName" : "Add Response Headers to Request",
-              "identifiesControllerService" : false,
-              "name" : "Add Response Headers to Request",
-              "sensitive" : false
-            },
-            "Basic Authentication Username" : {
-              "displayName" : "Basic Authentication Username",
-              "identifiesControllerService" : false,
-              "name" : "Basic Authentication Username",
-              "sensitive" : false
-            },
-            "Include Date Header" : {
-              "displayName" : "Include Date Header",
-              "identifiesControllerService" : false,
-              "name" : "Include Date Header",
-              "sensitive" : false
-            },
-            "Penalize on \"No Retry\"" : {
-              "displayName" : "Penalize on \"No Retry\"",
-              "identifiesControllerService" : false,
-              "name" : "Penalize on \"No Retry\"",
-              "sensitive" : false
-            },
-            "Useragent" : {
-              "displayName" : "Useragent",
-              "identifiesControllerService" : false,
-              "name" : "Useragent",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
-          "yieldDuration" : "1 sec"
-        }, {
+            "runDurationMillis" : 0,
+            "scheduledState" : "ENABLED",
+            "schedulingPeriod" : "0 sec",
+            "schedulingStrategy" : "TIMER_DRIVEN",
+            "style" : { },
+            "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
+            "yieldDuration" : "1 sec"
+          } ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
+        } ],
+        "processors" : [ {
           "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -476,7 +787,7 @@
           "executionNode" : "PRIMARY",
           "groupIdentifier" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
           "identifier" : "9812f170-ed80-3185-b3c8-c9542f8be622",
-          "name" : "GenerateFlowFile",
+          "name" : "Testing",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2496.0,
