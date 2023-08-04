@@ -362,7 +362,7 @@
             "properties" : {
               "Store State" : "Do not store state",
               "canonical-value-lookup-cache-size" : "100",
-              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} has been successfully saved. Logs: ${nel}  ",
+              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} data has been successfully saved. Logs: ${nel}  ",
               "chat_id" : "-930621813"
             },
             "propertyDescriptors" : {
@@ -942,7 +942,7 @@
             "properties" : {
               "Store State" : "Do not store state",
               "canonical-value-lookup-cache-size" : "100",
-              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} has been successfully saved into s3, the file size saved is ${fileSize} byte atau ${filesize}. Logs: ${nel}",
+              "message_log" : "The statement pool data dated ${date} totaling ${fragment.count} data has been successfully saved into s3, the file size saved is ${fileSize} byte atau ${filesize}. Logs: ${nel}",
               "chat_id" : "-930621813"
             },
             "propertyDescriptors" : {
