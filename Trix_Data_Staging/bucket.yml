@@ -8,5 +8,8 @@ flows:
   8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 6, file: Post_Telegram.snapshot, comments: Menambahkan
       message info di telegram message, author: anonymous, created: 1691171232920,
     flowName: Post Telegram, flowDesc: Send Message to Telegram}
+  ce81eb8c-1753-4958-8ce0-56678692b804: {ver: 1, file: Hartono_Bucket.snapshot, comments: Prossesor
+      group untuk testing, author: anonymous, created: 1691341836103, flowName: Hartono
+      Bucket, flowDesc: Testing Dev}
 layoutVer: 1
 bucketId: 00603a19-c9b4-4583-824e-a7d5a8af2b6e
