@@ -5,9 +5,15 @@ flows:
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 12, file: Get_Daily_Statement_Pool.snapshot,
     comments: menambahkan pesan logs, author: anonymous, created: 1691171254071, flowName: Get
       Daily Statement Pool, flowDesc: ''}
-  8fb831e8-a480-4811-a20d-a5b9a74ca7de: {ver: 7, file: Post_Telegram.snapshot, comments: 'Memisah
-      pipeline error telegram post message ', author: anonymous, created: 1691482190568,
-    flowName: Post Telegram, flowDesc: Send Message to Telegram}
+  8fb831e8-a480-4811-a20d-a5b9a74ca7de:
+    ver: 8
+    file: Post_Telegram.snapshot
+    comments: |
+      Menambahkan Resend Telegram Message
+    author: anonymous
+    created: 1691529667232
+    flowName: Post Telegram
+    flowDesc: Send Message to Telegram
   ce81eb8c-1753-4958-8ce0-56678692b804: {ver: 1, file: Hartono_Bucket.snapshot, comments: Prossesor
       group untuk testing, author: anonymous, created: 1691341836103, flowName: Hartono
       Bucket, flowDesc: Testing Dev}
