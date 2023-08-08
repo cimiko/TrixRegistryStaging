@@ -449,11 +449,11 @@
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
             "bends" : [ {
-              "x" : 2965.0,
-              "y" : 287.0
+              "x" : 2952.0,
+              "y" : 384.0
             }, {
-              "x" : 2965.0,
-              "y" : 337.0
+              "x" : 2960.0,
+              "y" : 352.0
             } ],
             "componentType" : "CONNECTION",
             "destination" : {
@@ -465,14 +465,86 @@
             },
             "flowFileExpiration" : "0 sec",
             "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-            "identifier" : "f74ea5f3-7804-3682-b05c-26f4666c03d4",
+            "identifier" : "aa4b5538-4ef8-351b-a255-bb7b3201965b",
             "labelIndex" : 1,
             "loadBalanceCompression" : "DO_NOT_COMPRESS",
             "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
             "name" : "",
             "partitioningAttribute" : "",
             "prioritizers" : [ ],
-            "selectedRelationships" : [ "No Retry", "Retry", "Failure" ],
+            "selectedRelationships" : [ "Retry" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
+              "x" : 2965.0,
+              "y" : 287.0
+            }, {
+              "x" : 2960.0,
+              "y" : 272.0
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "a290147f-0831-33eb-af02-4ffd4f9fd507",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "Failure" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ {
+              "x" : 2920.0,
+              "y" : 304.0
+            }, {
+              "x" : 2960.0,
+              "y" : 312.0
+            } ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+              "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+              "name" : "Send Message To Telegram",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
+            "identifier" : "09781842-5395-38b1-9e76-2fa510f5c15c",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "No Retry" ],
             "source" : {
               "comments" : "",
               "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
