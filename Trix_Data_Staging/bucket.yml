@@ -2,9 +2,9 @@ flows:
   b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 12, file: Create_Bucket.snapshot, comments: memperbaiki
       pesan logs di daily statement pool, author: anonymous, created: 1691171270149,
     flowName: Create Bucket, flowDesc: ''}
-  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 12, file: Get_Daily_Statement_Pool.snapshot,
-    comments: menambahkan pesan logs, author: anonymous, created: 1691171254071, flowName: Get
-      Daily Statement Pool, flowDesc: ''}
+  60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 13, file: Get_Daily_Statement_Pool.snapshot,
+    comments: Configurasi pipeline baru supaya lebih rapih dan clean, author: anonymous,
+    created: 1691529895294, flowName: Get Daily Statement Pool, flowDesc: ''}
   8fb831e8-a480-4811-a20d-a5b9a74ca7de:
     ver: 8
     file: Post_Telegram.snapshot

@@ -83,6 +83,42 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 522.9018249511719,
+            "y" : 469.0497131347656
+          }, {
+            "x" : 522.9018249511719,
+            "y" : 519.0497131347656
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+            "name" : "PutDataToStagingPool",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "ec9e3b90-9bf9-34cf-8cc3-03bfe8d9c54f",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure", "retry" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+            "name" : "PutDataToStagingPool",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 1000000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
@@ -119,8 +155,8 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "InsertDataToStaging",
+            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+            "name" : "Validasi Last Log Data",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -168,6 +204,36 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
             "name" : "Set Filename",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+            "name" : "PutDataToStagingPool",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "029cf681-05d0-3aae-a573-c94c5c0a5b56",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "original" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
+            "name" : "ConvertJSONToSQL",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -333,26 +399,26 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
-            "name" : "LogAttribute",
-            "type" : "PROCESSOR"
+            "groupId" : "f595d40c-cab5-3624-90a3-1c9f69d3c104",
+            "id" : "1ad935fb-b96c-3b2c-a135-c8c16deba845",
+            "name" : "Daily Statement Pool Telegram",
+            "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "db2bce9a-95fb-3e7d-ad74-3d94b4720263",
+          "identifier" : "d666b664-379b-3f7f-82fe-2cbf75cf8484",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "InsertDataToStaging",
+            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+            "name" : "PutDataToStagingPool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -466,36 +532,6 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
-            "name" : "Validasi Last Log Data",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "8484bd9b-b60d-3dc3-8a98-762ff5ed5893",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-            "name" : "InsertDataToStaging",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
@@ -570,7 +606,7 @@
             "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
             "flowId" : "8fb831e8-a480-4811-a20d-a5b9a74ca7de",
             "registryUrl" : "http://10.25.147.34:82",
-            "version" : 6
+            "version" : 8
           }
         } ],
         "processors" : [ {
@@ -836,125 +872,6 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.InvokeHTTP",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.14.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "d5ebef8b-3c93-3511-97e5-369f3607a2f7",
-          "name" : "InsertDataToStaging",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 592.0,
-            "y" : 442.3431396484375
-          },
-          "properties" : {
-            "esql-max-rows" : "0",
-            "dbf-default-precision" : "10",
-            "Max Wait Time" : "0 seconds",
-            "Database Connection Pooling Service" : "9efea989-0a6c-32c6-99f9-f11c6096ca0e",
-            "dbf-user-logical-types" : "true",
-            "dbf-default-scale" : "0",
-            "compression-format" : "NONE",
-            "esql-output-batch-size" : "0",
-            "esql-fetch-size" : "0",
-            "dbf-normalize" : "false"
-          },
-          "propertyDescriptors" : {
-            "esql-max-rows" : {
-              "displayName" : "Max Rows Per Flow File",
-              "identifiesControllerService" : false,
-              "name" : "esql-max-rows",
-              "sensitive" : false
-            },
-            "dbf-default-precision" : {
-              "displayName" : "Default Decimal Precision",
-              "identifiesControllerService" : false,
-              "name" : "dbf-default-precision",
-              "sensitive" : false
-            },
-            "Max Wait Time" : {
-              "displayName" : "Max Wait Time",
-              "identifiesControllerService" : false,
-              "name" : "Max Wait Time",
-              "sensitive" : false
-            },
-            "Database Connection Pooling Service" : {
-              "displayName" : "Database Connection Pooling Service",
-              "identifiesControllerService" : true,
-              "name" : "Database Connection Pooling Service",
-              "sensitive" : false
-            },
-            "sql-post-query" : {
-              "displayName" : "SQL Post-Query",
-              "identifiesControllerService" : false,
-              "name" : "sql-post-query",
-              "sensitive" : false
-            },
-            "dbf-user-logical-types" : {
-              "displayName" : "Use Avro Logical Types",
-              "identifiesControllerService" : false,
-              "name" : "dbf-user-logical-types",
-              "sensitive" : false
-            },
-            "dbf-default-scale" : {
-              "displayName" : "Default Decimal Scale",
-              "identifiesControllerService" : false,
-              "name" : "dbf-default-scale",
-              "sensitive" : false
-            },
-            "sql-pre-query" : {
-              "displayName" : "SQL Pre-Query",
-              "identifiesControllerService" : false,
-              "name" : "sql-pre-query",
-              "sensitive" : false
-            },
-            "compression-format" : {
-              "displayName" : "Compression Format",
-              "identifiesControllerService" : false,
-              "name" : "compression-format",
-              "sensitive" : false
-            },
-            "esql-output-batch-size" : {
-              "displayName" : "Output Batch Size",
-              "identifiesControllerService" : false,
-              "name" : "esql-output-batch-size",
-              "sensitive" : false
-            },
-            "esql-fetch-size" : {
-              "displayName" : "Fetch Size",
-              "identifiesControllerService" : false,
-              "name" : "esql-fetch-size",
-              "sensitive" : false
-            },
-            "SQL select query" : {
-              "displayName" : "SQL select query",
-              "identifiesControllerService" : false,
-              "name" : "SQL select query",
-              "sensitive" : false
-            },
-            "dbf-normalize" : {
-              "displayName" : "Normalize Table/Column Names",
-              "identifiesControllerService" : false,
-              "name" : "dbf-normalize",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.ExecuteSQL",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "success" ],
@@ -1404,14 +1321,16 @@
           },
           "properties" : {
             "character-set" : "UTF-8",
+            "table_schema_destination" : "public",
+            "table_destination" : "daily_statement_pool",
+            "s3_bucket" : "pool-data-staging",
+            "token" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
             "File Size" : "0B",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
             "folder_name_s3" : "data-pool",
-            "s3_bucket" : "pool-data-staging",
             "Data Format" : "Text",
-            "pool_service" : "https://api.infini4d.com/statement/getDailyStatement",
-            "token" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ"
+            "pool_service" : "https://api.infini4d.com/statement/getDailyStatement"
           },
           "propertyDescriptors" : {
             "character-set" : {
@@ -1420,16 +1339,40 @@
               "name" : "character-set",
               "sensitive" : false
             },
-            "File Size" : {
-              "displayName" : "File Size",
+            "table_schema_destination" : {
+              "displayName" : "table_schema_destination",
               "identifiesControllerService" : false,
-              "name" : "File Size",
+              "name" : "table_schema_destination",
               "sensitive" : false
             },
             "mime-type" : {
               "displayName" : "Mime Type",
               "identifiesControllerService" : false,
               "name" : "mime-type",
+              "sensitive" : false
+            },
+            "table_destination" : {
+              "displayName" : "table_destination",
+              "identifiesControllerService" : false,
+              "name" : "table_destination",
+              "sensitive" : false
+            },
+            "s3_bucket" : {
+              "displayName" : "s3_bucket",
+              "identifiesControllerService" : false,
+              "name" : "s3_bucket",
+              "sensitive" : false
+            },
+            "token" : {
+              "displayName" : "token",
+              "identifiesControllerService" : false,
+              "name" : "token",
+              "sensitive" : false
+            },
+            "File Size" : {
+              "displayName" : "File Size",
+              "identifiesControllerService" : false,
+              "name" : "File Size",
               "sensitive" : false
             },
             "generate-ff-custom-text" : {
@@ -1456,12 +1399,6 @@
               "name" : "folder_name_s3",
               "sensitive" : false
             },
-            "s3_bucket" : {
-              "displayName" : "s3_bucket",
-              "identifiesControllerService" : false,
-              "name" : "s3_bucket",
-              "sensitive" : false
-            },
             "Data Format" : {
               "displayName" : "Data Format",
               "identifiesControllerService" : false,
@@ -1472,12 +1409,6 @@
               "displayName" : "pool_service",
               "identifiesControllerService" : false,
               "name" : "pool_service",
-              "sensitive" : false
-            },
-            "token" : {
-              "displayName" : "token",
-              "identifiesControllerService" : false,
-              "name" : "token",
               "sensitive" : false
             }
           },
@@ -1501,11 +1432,184 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+          "name" : "PutDataToStagingPool",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 48.0,
+            "y" : 432.0
+          },
+          "properties" : {
+            "put-db-record-allow-multiple-statements" : "false",
+            "table-schema-cache-size" : "100",
+            "put-db-record-schema-name" : "${table_schema_destination}",
+            "put-db-record-quoted-table-identifiers" : "false",
+            "put-db-record-unmatched-column-behavior" : "Fail on Unmatched Columns",
+            "put-db-record-translate-field-names" : "true",
+            "put-db-record-dcbp-service" : "9efea989-0a6c-32c6-99f9-f11c6096ca0e",
+            "put-db-record-query-timeout" : "0 seconds",
+            "rollback-on-failure" : "false",
+            "put-db-record-statement-type" : "INSERT",
+            "db-type" : "PostgreSQL",
+            "put-db-record-quoted-identifiers" : "false",
+            "put-db-record-table-name" : "${table_destination}",
+            "put-db-record-unmatched-field-behavior" : "Ignore Unmatched Fields",
+            "put-db-record-max-batch-size" : "0",
+            "put-db-record-record-reader" : "f13b5363-ce99-3ad5-9844-a54c245e972d"
+          },
+          "propertyDescriptors" : {
+            "put-db-record-allow-multiple-statements" : {
+              "displayName" : "Allow Multiple SQL Statements",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-allow-multiple-statements",
+              "sensitive" : false
+            },
+            "table-schema-cache-size" : {
+              "displayName" : "Table Schema Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "table-schema-cache-size",
+              "sensitive" : false
+            },
+            "put-db-record-schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-schema-name",
+              "sensitive" : false
+            },
+            "put-db-record-field-containing-sql" : {
+              "displayName" : "Field Containing SQL",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-field-containing-sql",
+              "sensitive" : false
+            },
+            "put-db-record-quoted-table-identifiers" : {
+              "displayName" : "Quote Table Identifiers",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-quoted-table-identifiers",
+              "sensitive" : false
+            },
+            "Statement Type Record Path" : {
+              "displayName" : "Statement Type Record Path",
+              "identifiesControllerService" : false,
+              "name" : "Statement Type Record Path",
+              "sensitive" : false
+            },
+            "put-db-record-unmatched-column-behavior" : {
+              "displayName" : "Unmatched Column Behavior",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-unmatched-column-behavior",
+              "sensitive" : false
+            },
+            "put-db-record-catalog-name" : {
+              "displayName" : "Catalog Name",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-catalog-name",
+              "sensitive" : false
+            },
+            "put-db-record-translate-field-names" : {
+              "displayName" : "Translate Field Names",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-translate-field-names",
+              "sensitive" : false
+            },
+            "put-db-record-dcbp-service" : {
+              "displayName" : "Database Connection Pooling Service",
+              "identifiesControllerService" : true,
+              "name" : "put-db-record-dcbp-service",
+              "sensitive" : false
+            },
+            "put-db-record-query-timeout" : {
+              "displayName" : "Max Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-query-timeout",
+              "sensitive" : false
+            },
+            "rollback-on-failure" : {
+              "displayName" : "Rollback On Failure",
+              "identifiesControllerService" : false,
+              "name" : "rollback-on-failure",
+              "sensitive" : false
+            },
+            "put-db-record-statement-type" : {
+              "displayName" : "Statement Type",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-statement-type",
+              "sensitive" : false
+            },
+            "db-type" : {
+              "displayName" : "Database Type",
+              "identifiesControllerService" : false,
+              "name" : "db-type",
+              "sensitive" : false
+            },
+            "put-db-record-update-keys" : {
+              "displayName" : "Update Keys",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-update-keys",
+              "sensitive" : false
+            },
+            "put-db-record-quoted-identifiers" : {
+              "displayName" : "Quote Column Identifiers",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-quoted-identifiers",
+              "sensitive" : false
+            },
+            "put-db-record-table-name" : {
+              "displayName" : "Table Name",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-table-name",
+              "sensitive" : false
+            },
+            "put-db-record-unmatched-field-behavior" : {
+              "displayName" : "Unmatched Field Behavior",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-unmatched-field-behavior",
+              "sensitive" : false
+            },
+            "put-db-record-max-batch-size" : {
+              "displayName" : "Maximum Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "put-db-record-max-batch-size",
+              "sensitive" : false
+            },
+            "put-db-record-record-reader" : {
+              "displayName" : "Record Reader",
+              "identifiesControllerService" : true,
+              "name" : "put-db-record-record-reader",
+              "sensitive" : false
+            },
+            "Data Record Path" : {
+              "displayName" : "Data Record Path",
+              "identifiesControllerService" : false,
+              "name" : "Data Record Path",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutDatabaseRecord",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
           "name" : "Validasi Last Log Data",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 48.0,
+            "x" : 640.0,
             "y" : 440.0
           },
           "properties" : {
@@ -1527,7 +1631,7 @@
             }
           },
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -1555,9 +1659,9 @@
           },
           "properties" : {
             "table-schema-cache-size" : "100",
-            "Table Name" : "daily_statement_pool",
+            "Table Name" : "${table_destination}",
             "jts-sql-param-attr-prefix" : "sql",
-            "Schema Name" : "public",
+            "Schema Name" : "${table_schema_destination}",
             "Unmatched Field Behavior" : "Ignore Unmatched Fields",
             "Unmatched Column Behavior" : "Fail on Unmatched Columns",
             "jts-quoted-identifiers" : "false",
