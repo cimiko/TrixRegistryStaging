@@ -1,13 +1,7 @@
 flows:
-  b8488123-f4f8-4d67-a5eb-99bc1f902520:
-    ver: 14
-    file: Create_Bucket.snapshot
-    comments: |
-      Create prosess group infini
-    author: anonymous
-    created: 1692305070563
-    flowName: Create Bucket
-    flowDesc: ''
+  b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 15, file: Create_Bucket.snapshot, comments: Mengupdate
+      daily statemen pool, author: anonymous, created: 1693348267885, flowName: Create
+      Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 14, file: Get_Daily_Statement_Pool.snapshot,
     comments: 'Mengupdate Token daily_statement_pool, karena ada perubahan atau update
       service dari team pool', author: anonymous, created: 1693348249984, flowName: Get
