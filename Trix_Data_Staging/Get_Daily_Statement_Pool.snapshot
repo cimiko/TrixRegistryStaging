@@ -634,7 +634,6 @@
             "Proxy Type" : "http",
             "Connection Timeout" : "30 secs",
             "send-message-body" : "true",
-            "Authorization" : "${token}",
             "set-form-filename" : "true",
             "Always Output Response" : "true",
             "etag-max-cache-size" : "10MB",
@@ -648,6 +647,7 @@
             "Read Timeout" : "30 secs",
             "Max Length To Put In Attribute" : "256",
             "ignore-response-content" : "false",
+            "token" : "${token}",
             "Digest Authentication" : "false",
             "HTTP Method" : "GET",
             "Add Response Headers to Request" : "true",
@@ -701,12 +701,6 @@
               "displayName" : "Send Message Body",
               "identifiesControllerService" : false,
               "name" : "send-message-body",
-              "sensitive" : false
-            },
-            "Authorization" : {
-              "displayName" : "Authorization",
-              "identifiesControllerService" : false,
-              "name" : "Authorization",
               "sensitive" : false
             },
             "set-form-filename" : {
@@ -815,6 +809,12 @@
               "displayName" : "Proxy Port",
               "identifiesControllerService" : false,
               "name" : "Proxy Port",
+              "sensitive" : false
+            },
+            "token" : {
+              "displayName" : "token",
+              "identifiesControllerService" : false,
+              "name" : "token",
               "sensitive" : false
             },
             "SSL Context Service" : {
@@ -1324,7 +1324,7 @@
             "table_schema_destination" : "public",
             "table_destination" : "daily_statement_pool",
             "s3_bucket" : "pool-data-staging",
-            "token" : "Bearer eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
+            "token" : "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
             "File Size" : "0B",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
