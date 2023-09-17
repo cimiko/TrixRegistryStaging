@@ -1,0 +1,93 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "defaultBackPressureDataSizeThreshold" : "1 GB",
+        "defaultBackPressureObjectThreshold" : 10000,
+        "defaultFlowFileExpiration" : "0 sec",
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "0ecbf916-6356-3e3c-a86a-e8bdf2bfa9bd",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "Pools",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 336.0,
+          "y" : 32.0
+        },
+        "processGroups" : [ {
+          "comments" : "",
+          "componentType" : "PROCESS_GROUP",
+          "connections" : [ ],
+          "controllerServices" : [ ],
+          "defaultBackPressureDataSizeThreshold" : "1 GB",
+          "defaultBackPressureObjectThreshold" : 10000,
+          "defaultFlowFileExpiration" : "0 sec",
+          "flowFileConcurrency" : "UNBOUNDED",
+          "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+          "funnels" : [ ],
+          "groupIdentifier" : "0ecbf916-6356-3e3c-a86a-e8bdf2bfa9bd",
+          "identifier" : "4e24ddfb-168a-38eb-81c8-6e74da6f77be",
+          "inputPorts" : [ ],
+          "labels" : [ ],
+          "name" : "Initial Load",
+          "outputPorts" : [ ],
+          "position" : {
+            "x" : 376.0,
+            "y" : 48.0
+          },
+          "processGroups" : [ {
+            "comments" : "",
+            "componentType" : "PROCESS_GROUP",
+            "connections" : [ ],
+            "controllerServices" : [ ],
+            "defaultBackPressureDataSizeThreshold" : "1 GB",
+            "defaultBackPressureObjectThreshold" : 10000,
+            "defaultFlowFileExpiration" : "0 sec",
+            "flowFileConcurrency" : "UNBOUNDED",
+            "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+            "funnels" : [ ],
+            "groupIdentifier" : "4e24ddfb-168a-38eb-81c8-6e74da6f77be",
+            "identifier" : "1a4ec261-c5ca-35fa-9b4c-d8874e2dfb7a",
+            "inputPorts" : [ ],
+            "labels" : [ ],
+            "name" : "Get Daily Statement Pool",
+            "outputPorts" : [ ],
+            "position" : {
+              "x" : 312.0,
+              "y" : 24.0
+            },
+            "processGroups" : [ ],
+            "processors" : [ ],
+            "remoteProcessGroups" : [ ],
+            "variables" : { },
+            "versionedFlowCoordinates" : {
+              "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
+              "flowId" : "60c9347c-44d3-4d76-b482-6956d02bbeb5",
+              "registryUrl" : "http://10.25.147.34:82",
+              "version" : 14
+            }
+          } ],
+          "processors" : [ ],
+          "remoteProcessGroups" : [ ],
+          "variables" : { }
+        } ],
+        "processors" : [ ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
