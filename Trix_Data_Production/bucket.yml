@@ -1,7 +1,4 @@
 flows:
-  9e02814a-20d5-4f13-9b27-c8ac7e114b60: {ver: 1, file: Trix_ETL_Pools_Production.snapshot,
-    comments: Membuat Prosess Group ETL untuk Pools, author: anonymous, created: 1694929112374,
-    flowName: Trix ETL Pools Production, flowDesc: Trix Pipeline ETL Pools Production}
   4ff69df6-b16c-4528-a973-c775bced183e: {ver: 1, file: Trix_ETL_Production.snapshot,
     comments: Menambahkan Trix ETL Production, author: anonymous, created: 1694926952103,
     flowName: Trix ETL Production, flowDesc: Proses Pipeline ETL Production Trix}
