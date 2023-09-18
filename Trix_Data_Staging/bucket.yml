@@ -1,4 +1,8 @@
 flows:
+  5b248459-98ea-4606-b441-68549966a999: {ver: 1, file: Get_Daily_Statement_Pools.snapshot,
+    comments: Menambahkan Data Pipeline ETL Get Daily Statement Pools, author: anonymous,
+    created: 1695052057612, flowName: Get Daily Statement Pools, flowDesc: Menambahkan
+      Pipeline Get Daily Statement Pools}
   b8488123-f4f8-4d67-a5eb-99bc1f902520: {ver: 16, file: Create_Bucket.snapshot, comments: update,
     author: anonymous, created: 1695051697266, flowName: Create Bucket, flowDesc: ''}
   60c9347c-44d3-4d76-b482-6956d02bbeb5: {ver: 14, file: Get_Daily_Statement_Pool.snapshot,
