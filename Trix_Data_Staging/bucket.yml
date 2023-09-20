@@ -21,8 +21,9 @@ flows:
   ce81eb8c-1753-4958-8ce0-56678692b804: {ver: 1, file: Hartono_Bucket.snapshot, comments: Prossesor
       group untuk testing, author: anonymous, created: 1691341836103, flowName: Hartono
       Bucket, flowDesc: Testing Dev}
-  45fdec7b-0efb-4452-b0c2-f6ccfb180ad2: {ver: 1, file: Trix_Staging.snapshot, comments: Recovery
-      Trix Staging, author: anonymous, created: 1695052266912, flowName: Trix Staging,
-    flowDesc: Semua Kumpulan Trix Staging}
+  45fdec7b-0efb-4452-b0c2-f6ccfb180ad2: {ver: 2, file: Trix_Staging.snapshot, comments: Menambahkan
+      pipeline Initial load untuk ke table temp_daily_statement_pool di Big Data,
+    author: anonymous, created: 1695170826439, flowName: Trix Staging, flowDesc: Semua
+      Kumpulan Trix Staging}
 layoutVer: 1
 bucketId: 00603a19-c9b4-4583-824e-a7d5a8af2b6e
