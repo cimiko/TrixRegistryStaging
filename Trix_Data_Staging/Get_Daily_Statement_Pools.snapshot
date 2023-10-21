@@ -996,7 +996,7 @@
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "message_log" : "The statement pool data dated ${statement_date} totaling ${fragment.count} data has been successfully saved. Logs: ${nel}  ",
-                "chat_id" : "-930621813"
+                "chat_id" : "-1001909383679"
               },
               "propertyDescriptors" : {
                 "Delete Attributes Expression" : {
@@ -1099,42 +1099,6 @@
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
               "selectedRelationships" : [ "Response" ],
-              "source" : {
-                "comments" : "",
-                "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-                "id" : "fee430bf-2b48-36f3-bac9-f560b0498dbf",
-                "name" : "Resend Telegram Message",
-                "type" : "PROCESSOR"
-              },
-              "zIndex" : 0
-            }, {
-              "backPressureDataSizeThreshold" : "1 GB",
-              "backPressureObjectThreshold" : 10000,
-              "bends" : [ {
-                "x" : 3560.0,
-                "y" : 366.3921813964844
-              }, {
-                "x" : 3576.0,
-                "y" : 358.3921813964844
-              } ],
-              "componentType" : "CONNECTION",
-              "destination" : {
-                "comments" : "",
-                "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-                "id" : "fee430bf-2b48-36f3-bac9-f560b0498dbf",
-                "name" : "Resend Telegram Message",
-                "type" : "PROCESSOR"
-              },
-              "flowFileExpiration" : "0 sec",
-              "groupIdentifier" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-              "identifier" : "042adb0d-3d4b-36c3-9d88-6ab20f29c092",
-              "labelIndex" : 1,
-              "loadBalanceCompression" : "DO_NOT_COMPRESS",
-              "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-              "name" : "",
-              "partitioningAttribute" : "",
-              "prioritizers" : [ ],
-              "selectedRelationships" : [ "Retry" ],
               "source" : {
                 "comments" : "",
                 "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
@@ -1284,18 +1248,18 @@
               "backPressureDataSizeThreshold" : "1 GB",
               "backPressureObjectThreshold" : 10000,
               "bends" : [ {
-                "x" : 3552.0,
-                "y" : 310.3921813964844
+                "x" : 3128.0,
+                "y" : 216.0
               }, {
-                "x" : 3576.0,
-                "y" : 310.3921813964844
+                "x" : 2944.0,
+                "y" : 128.0
               } ],
               "componentType" : "CONNECTION",
               "destination" : {
                 "comments" : "",
                 "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
-                "id" : "fee430bf-2b48-36f3-bac9-f560b0498dbf",
-                "name" : "Resend Telegram Message",
+                "id" : "c6098d5a-ed8e-37d6-aa42-eb8779ecf258",
+                "name" : "Send Message To Telegram",
                 "type" : "PROCESSOR"
               },
               "flowFileExpiration" : "0 sec",
@@ -1307,7 +1271,7 @@
               "name" : "",
               "partitioningAttribute" : "",
               "prioritizers" : [ ],
-              "selectedRelationships" : [ "No Retry" ],
+              "selectedRelationships" : [ "No Retry", "Retry" ],
               "source" : {
                 "comments" : "",
                 "groupId" : "bc9ec3fc-5f5d-35df-861e-922cf5736542",
@@ -2006,7 +1970,7 @@
                 "Store State" : "Do not store state",
                 "canonical-value-lookup-cache-size" : "100",
                 "message_log" : "The statement pool data dated ${statement_date} totaling ${fragment.count} data has been successfully saved into s3, the file size saved is ${fileSize} byte atau ${filesize}. Logs: ${nel}",
-                "chat_id" : "-930621813"
+                "chat_id" : "-1001909383679"
               },
               "propertyDescriptors" : {
                 "Delete Attributes Expression" : {
