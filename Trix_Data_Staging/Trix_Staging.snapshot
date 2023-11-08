@@ -35,8 +35,8 @@
         "name" : "Trix_Staging",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 398.0,
-          "y" : 93.0
+          "x" : 168.0,
+          "y" : -40.0
         },
         "processGroups" : [ {
           "comments" : "",
@@ -3952,7 +3952,7 @@
               "bucketId" : "00603a19-c9b4-4583-824e-a7d5a8af2b6e",
               "flowId" : "5b248459-98ea-4606-b441-68549966a999",
               "registryUrl" : "http://10.25.146.15:82",
-              "version" : 3
+              "version" : 4
             }
           } ],
           "processors" : [ ],
