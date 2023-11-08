@@ -84,7 +84,13 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
+          "bends" : [ {
+            "x" : 8.0,
+            "y" : 72.0
+          }, {
+            "x" : -80.0,
+            "y" : 128.0
+          } ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
@@ -95,19 +101,19 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "35ac37d3-2641-35ad-8e78-93fbb9a49781",
+          "identifier" : "88c5dc4c-c2f0-36cc-a339-ea79d1c7f4b5",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "original" ],
+          "selectedRelationships" : [ "failure" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToParquet",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -115,11 +121,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 522.9018249511719,
-            "y" : 469.0497131347656
+            "x" : 1062.9075927734375,
+            "y" : 437.0967102050781
           }, {
-            "x" : 522.9018249511719,
-            "y" : 519.0497131347656
+            "x" : 1062.9075927734375,
+            "y" : 487.0967102050781
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -149,31 +155,37 @@
           "zIndex" : 0
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ ],
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 632.0,
+            "y" : 176.0
+          }, {
+            "x" : 504.0,
+            "y" : 192.0
+          } ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "d5c10dd4-8275-34b6-b90b-e60aa4610390",
-            "name" : "LogAttribute",
+            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
+            "name" : "ConvertJsonToParquet",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "1bb804a9-7446-3a29-90b0-6525f17fe96e",
+          "identifier" : "430131f2-a571-32ab-98ac-2888eb520153",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "Validasi Jumlah Data" ],
+          "selectedRelationships" : [ "Response" ],
           "source" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
-            "name" : "Validasi Last Log Data",
+            "id" : "ce299126-b18e-32a1-9fc5-21fe40256cd0",
+            "name" : "GetDailyStatementPool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -204,66 +216,6 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ae225f5f-3e4d-3129-9302-c4b82b8b049b",
             "name" : "Set Filename",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
-            "name" : "Validasi Last Log Data",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "806a9424-e242-3739-934f-c2772ee7e5f7",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "sql" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
-            "name" : "PutDataToStagingPool",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "029cf681-05d0-3aae-a573-c94c5c0a5b56",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "original" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -335,8 +287,8 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
+            "id" : "a1c4a668-a664-34c1-8562-1562993af2da",
+            "name" : "GetDurationServicePool",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -456,11 +408,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : -432.0,
-            "y" : 480.0
+            "x" : -26.19684600830078,
+            "y" : 436.86346435546875
           }, {
-            "x" : -488.0,
-            "y" : 520.0
+            "x" : -82.19684600830078,
+            "y" : 476.86346435546875
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -485,6 +437,36 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "40e3530c-da72-30e5-a30a-6c28bc1156bf",
             "name" : "Backup Data To S3",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
+            "name" : "PutDataToStagingPool",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "bf5f98fb-d7fe-37cb-8d39-d1ee7fdcaa51",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "a1c4a668-a664-34c1-8562-1562993af2da",
+            "name" : "GetDurationServicePool",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -526,6 +508,36 @@
           "destination" : {
             "comments" : "",
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+            "name" : "Validasi Last Log Data",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "28aec0bc-f5cb-3984-a094-78c2ecc03210",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "sql" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
+            "name" : "ConvertJSONToSQL",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "ce299126-b18e-32a1-9fc5-21fe40256cd0",
             "name" : "GetDailyStatementPool",
             "type" : "PROCESSOR"
@@ -545,78 +557,6 @@
             "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
             "id" : "d3ee8754-ce04-37c8-80b0-ba3508b2b688",
             "name" : "DailyStatementPool",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 1000000,
-          "bends" : [ {
-            "x" : 1061.0,
-            "y" : 297.3431396484375
-          }, {
-            "x" : 1061.0,
-            "y" : 347.3431396484375
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "0034f182-f38a-3290-ba2d-19917661aeaa",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "6724cf90-6d95-3865-8980-7a8d35b6a956",
-            "name" : "ConvertJSONToSQL",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 517.0,
-            "y" : 77.42235565185547
-          }, {
-            "x" : 517.0,
-            "y" : 127.42235565185547
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
-            "name" : "ConvertJsonToParquet",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "161b883b-100d-332c-84d1-2d55e8194cbe",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "failure" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-            "id" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
-            "name" : "ConvertJsonToParquet",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -2118,70 +2058,6 @@
           "variables" : { }
         } ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-update-attribute-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.14.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "8eda1cfa-b6ac-34e2-8893-86e5e25efbdd",
-          "name" : "UpdateAttribute",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 776.0,
-            "y" : -144.0
-          },
-          "properties" : {
-            "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100",
-            "pool_service" : "${pool_service}${pool_params}"
-          },
-          "propertyDescriptors" : {
-            "Delete Attributes Expression" : {
-              "displayName" : "Delete Attributes Expression",
-              "identifiesControllerService" : false,
-              "name" : "Delete Attributes Expression",
-              "sensitive" : false
-            },
-            "Store State" : {
-              "displayName" : "Store State",
-              "identifiesControllerService" : false,
-              "name" : "Store State",
-              "sensitive" : false
-            },
-            "canonical-value-lookup-cache-size" : {
-              "displayName" : "Cache Value Lookup Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "canonical-value-lookup-cache-size",
-              "sensitive" : false
-            },
-            "Stateful Variables Initial Value" : {
-              "displayName" : "Stateful Variables Initial Value",
-              "identifiesControllerService" : false,
-              "name" : "Stateful Variables Initial Value",
-              "sensitive" : false
-            },
-            "pool_service" : {
-              "displayName" : "pool_service",
-              "identifiesControllerService" : false,
-              "name" : "pool_service",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "No Retry", "Original" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -2463,7 +2339,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 592.0,
-            "y" : 618.3431396484375
+            "y" : 624.0
           },
           "properties" : {
             "character-set" : "UTF-8",
@@ -2545,8 +2421,8 @@
           "name" : "Backup Data To S3",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -360.0,
-            "y" : 440.0
+            "x" : 48.0,
+            "y" : 400.0
           },
           "properties" : {
             "FullControl User List" : "${s3.permissions.full.users}",
@@ -2832,6 +2708,115 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
+          "name" : "Validasi Last Log Data",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -568.0,
+            "y" : 664.0
+          },
+          "properties" : {
+            "Routing Strategy" : "Route to Property name",
+            "Validasi Jumlah Data" : "${fragment.count:ge(${fragment.index:plus(2)})}"
+          },
+          "propertyDescriptors" : {
+            "Routing Strategy" : {
+              "displayName" : "Routing Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Routing Strategy",
+              "sensitive" : false
+            },
+            "Validasi Jumlah Data" : {
+              "displayName" : "Validasi Jumlah Data",
+              "identifiesControllerService" : false,
+              "name" : "Validasi Jumlah Data",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "DISABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "8eda1cfa-b6ac-34e2-8893-86e5e25efbdd",
+          "name" : "UpdateAttribute",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 776.0,
+            "y" : -144.0
+          },
+          "properties" : {
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100",
+            "pool_service" : "${pool_service}${pool_params}"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            },
+            "pool_service" : {
+              "displayName" : "pool_service",
+              "identifiesControllerService" : false,
+              "name" : "pool_service",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "ae750634-dd61-396e-bb7e-1828ae7bc0de",
           "name" : "ConvertJsonToParquet",
           "penaltyDuration" : "30 sec",
@@ -2894,11 +2879,11 @@
           "properties" : {
             "character-set" : "UTF-8",
             "table_schema_destination" : "public",
-            "pool_params" : "?date=27-09-2023",
+            "pool_params" : "?date=13-10-2023",
             "table_destination" : "daily_statement_pool",
             "s3_bucket" : "pool-data-staging",
             "token" : "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVVNFUiJdLCJzdWIiOiJ3YWZpLWJlYmFzIiwiaWF0IjoxNjY3MDI0OTc5LCJleHAiOjE3NTM0MjQ5Nzl9.0BkaTtAMjdjvwv-oVhpjXBZ-g0RmF1D8yonwthvt9P1g2ms8BaN7_6BMcXnDI4aRmlG8qeWYawloMKfbYSBlAQ",
-            "statement_date" : "2023-09-27",
+            "statement_date" : "2023-10-13",
             "File Size" : "0B",
             "Batch Size" : "1",
             "Unique FlowFiles" : "false",
@@ -3145,57 +3130,12 @@
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
           "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
-          "identifier" : "f55accf9-b0e7-38bb-8b69-354f887debc5",
-          "name" : "Validasi Last Log Data",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 640.0,
-            "y" : 440.0
-          },
-          "properties" : {
-            "Routing Strategy" : "Route to Property name",
-            "Validasi Jumlah Data" : "${fragment.count:ge(${fragment.index:plus(2)})}"
-          },
-          "propertyDescriptors" : {
-            "Routing Strategy" : {
-              "displayName" : "Routing Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Routing Strategy",
-              "sensitive" : false
-            },
-            "Validasi Jumlah Data" : {
-              "displayName" : "Validasi Jumlah Data",
-              "identifiesControllerService" : false,
-              "name" : "Validasi Jumlah Data",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.RouteOnAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.14.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
           "identifier" : "7f2ee62a-6d1e-3b1b-9f6d-d9108f436265",
           "name" : "PutDataToStagingPool",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 48.0,
-            "y" : 432.0
+            "x" : 592.0,
+            "y" : 400.0
           },
           "properties" : {
             "put-db-record-allow-multiple-statements" : "false",
@@ -3367,8 +3307,8 @@
           "name" : "ConvertJSONToSQL",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 592.0,
-            "y" : 258.3431396484375
+            "x" : -568.0,
+            "y" : 480.0
           },
           "properties" : {
             "table-schema-cache-size" : "100",
@@ -3464,7 +3404,7 @@
             }
           },
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -3488,7 +3428,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 48.0,
-            "y" : 256.0
+            "y" : 224.0
           },
           "properties" : {
             "filename" : "PoolStatement${statement_date}.parquet",
@@ -3531,6 +3471,70 @@
               "displayName" : "Stateful Variables Initial Value",
               "identifiesControllerService" : false,
               "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.14.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "de1cf8ac-71ae-3d64-a4b5-fcdd417e4898",
+          "identifier" : "a1c4a668-a664-34c1-8562-1562993af2da",
+          "name" : "GetDurationServicePool",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 592.0,
+            "y" : 224.0
+          },
+          "properties" : {
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100",
+            "duration_service_pool" : "${processor.queuedDuration}_${queuedDuration}_${lineageDuration}_${processor.lineageDuration}"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            },
+            "duration_service_pool" : {
+              "displayName" : "duration_service_pool",
+              "identifiesControllerService" : false,
+              "name" : "duration_service_pool",
               "sensitive" : false
             }
           },
