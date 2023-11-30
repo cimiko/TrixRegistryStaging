@@ -21,8 +21,8 @@ flows:
   ce81eb8c-1753-4958-8ce0-56678692b804: {ver: 1, file: Hartono_Bucket.snapshot, comments: Prossesor
       group untuk testing, author: anonymous, created: 1691341836103, flowName: Hartono
       Bucket, flowDesc: Testing Dev}
-  45fdec7b-0efb-4452-b0c2-f6ccfb180ad2: {ver: 8, file: Trix_Staging.snapshot, comments: 'Menambahkan
-      report daily statement pool ', author: anonymous, created: 1701377011607, flowName: Trix
+  45fdec7b-0efb-4452-b0c2-f6ccfb180ad2: {ver: 9, file: Trix_Staging.snapshot, comments: Menambahkan
+      Daily Statement pool, author: anonymous, created: 1701377038780, flowName: Trix
       Staging, flowDesc: Semua Kumpulan Trix Staging}
 layoutVer: 1
 bucketId: 00603a19-c9b4-4583-824e-a7d5a8af2b6e
